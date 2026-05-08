@@ -1,12 +1,5 @@
-# *
-User-agent: *
+User-Agent: *
 Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
 
-# Host
 Host: https://www.byteshield.com
-
-# Sitemaps
 Sitemap: https://www.byteshield.com/sitemap.xml
