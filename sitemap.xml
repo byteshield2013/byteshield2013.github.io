@@ -4,7 +4,8 @@
 <loc>https://www.byteshield.com/zh/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -12,7 +13,8 @@
 <loc>https://www.byteshield.com/zh/about/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/about/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/about/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/about/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -20,7 +22,8 @@
 <loc>https://www.byteshield.com/zh/pricing/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/pricing/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/pricing/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/pricing/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -28,7 +31,8 @@
 <loc>https://www.byteshield.com/zh/faq/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/faq/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/faq/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/faq/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -36,7 +40,8 @@
 <loc>https://www.byteshield.com/zh/contact/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/contact/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/contact/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/contact/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -44,7 +49,8 @@
 <loc>https://www.byteshield.com/zh/blog/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -52,7 +58,8 @@
 <loc>https://www.byteshield.com/zh/services/scdn/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/scdn/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/scdn/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/scdn/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -60,7 +67,8 @@
 <loc>https://www.byteshield.com/zh/services/security/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/security/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/security/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/security/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -68,7 +76,8 @@
 <loc>https://www.byteshield.com/zh/services/streaming/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/streaming/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/streaming/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/streaming/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -76,7 +85,8 @@
 <loc>https://www.byteshield.com/zh/solutions/china-cross/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/china-cross/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/china-cross/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/china-cross/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -84,7 +94,8 @@
 <loc>https://www.byteshield.com/zh/solutions/igaming/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/igaming/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/igaming/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/igaming/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -92,7 +103,8 @@
 <loc>https://www.byteshield.com/zh/solutions/online-media/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/online-media/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/online-media/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/online-media/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -100,7 +112,8 @@
 <loc>https://www.byteshield.com/zh/solutions/e-commerce/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/e-commerce/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/e-commerce/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/e-commerce/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -108,6 +121,7 @@
 <loc>https://www.byteshield.com/zh/blog/gaming-cdn-ddos-protection/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/gaming-cdn-ddos-protection/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/gaming-cdn-ddos-protection/" />
 <lastmod>2026-05-02T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -116,6 +130,7 @@
 <loc>https://www.byteshield.com/zh/blog/is-your-cdn-actually-working/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/is-your-cdn-actually-working/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/is-your-cdn-actually-working/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/is-your-cdn-actually-working/" />
 <lastmod>2026-05-01T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -124,6 +139,7 @@
 <loc>https://www.byteshield.com/zh/blog/china-acceleration-without-icp/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/china-acceleration-without-icp/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/china-acceleration-without-icp/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/china-acceleration-without-icp/" />
 <lastmod>2026-03-26T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -132,7 +148,8 @@
 <loc>https://www.byteshield.com/en/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -140,7 +157,8 @@
 <loc>https://www.byteshield.com/en/about/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/about/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/about/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/about/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -148,7 +166,8 @@
 <loc>https://www.byteshield.com/en/pricing/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/pricing/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/pricing/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/pricing/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -156,7 +175,8 @@
 <loc>https://www.byteshield.com/en/faq/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/faq/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/faq/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/faq/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -164,7 +184,8 @@
 <loc>https://www.byteshield.com/en/contact/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/contact/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/contact/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/contact/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -172,7 +193,8 @@
 <loc>https://www.byteshield.com/en/blog/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -180,7 +202,8 @@
 <loc>https://www.byteshield.com/en/services/scdn/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/scdn/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/scdn/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/scdn/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -188,7 +211,8 @@
 <loc>https://www.byteshield.com/en/services/security/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/security/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/security/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/security/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -196,7 +220,8 @@
 <loc>https://www.byteshield.com/en/services/streaming/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/streaming/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/streaming/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/streaming/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -204,7 +229,8 @@
 <loc>https://www.byteshield.com/en/solutions/china-cross/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/china-cross/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/china-cross/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/china-cross/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -212,7 +238,8 @@
 <loc>https://www.byteshield.com/en/solutions/igaming/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/igaming/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/igaming/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/igaming/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -220,7 +247,8 @@
 <loc>https://www.byteshield.com/en/solutions/online-media/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/online-media/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/online-media/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/online-media/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -228,7 +256,8 @@
 <loc>https://www.byteshield.com/en/solutions/e-commerce/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/e-commerce/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/e-commerce/" />
-<lastmod>2026-05-10T02:26:32.202Z</lastmod>
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/e-commerce/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -236,6 +265,7 @@
 <loc>https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/gaming-cdn-ddos-protection/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/gaming-cdn-ddos-protection/" />
 <lastmod>2026-05-02T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -244,6 +274,7 @@
 <loc>https://www.byteshield.com/en/blog/is-your-cdn-actually-working/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/is-your-cdn-actually-working/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/is-your-cdn-actually-working/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/is-your-cdn-actually-working/" />
 <lastmod>2026-05-01T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -252,6 +283,151 @@
 <loc>https://www.byteshield.com/en/blog/china-acceleration-without-icp/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/china-acceleration-without-icp/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/china-acceleration-without-icp/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/china-acceleration-without-icp/" />
+<lastmod>2026-03-26T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/about/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/about/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/about/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/about/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/pricing/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/pricing/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/pricing/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/faq/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/faq/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/faq/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/faq/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/contact/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/contact/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/contact/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/contact/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/blog/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/services/scdn/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/scdn/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/scdn/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/scdn/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/services/security/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/security/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/security/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/security/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/services/streaming/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/services/streaming/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/services/streaming/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/services/streaming/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/solutions/china-cross/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/china-cross/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/china-cross/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/china-cross/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/solutions/igaming/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/igaming/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/igaming/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/igaming/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/solutions/online-media/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/online-media/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/online-media/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/online-media/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/solutions/e-commerce/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/solutions/e-commerce/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/solutions/e-commerce/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/solutions/e-commerce/" />
+<lastmod>2026-05-20T15:55:42.880Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/blog/gaming-cdn-ddos-protection/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/gaming-cdn-ddos-protection/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/gaming-cdn-ddos-protection/" />
+<lastmod>2026-05-02T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/blog/is-your-cdn-actually-working/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/is-your-cdn-actually-working/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/is-your-cdn-actually-working/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/is-your-cdn-actually-working/" />
+<lastmod>2026-05-01T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/blog/china-acceleration-without-icp/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/china-acceleration-without-icp/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/china-acceleration-without-icp/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/china-acceleration-without-icp/" />
 <lastmod>2026-03-26T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
