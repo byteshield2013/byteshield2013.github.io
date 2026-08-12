@@ -1,0 +1,39 @@
+# ByteShield
+
+> ByteShield is an Asia-Pacific cloud services brand providing global CDN acceleration, DDoS/WAF security protection, streaming acceleration, SDK-based app secure acceleration, and China cross-border solutions. All pages are available in Simplified Chinese (default, /zh/), English (/en/), and Japanese (/ja/); swap the locale segment in any URL below.
+
+## Products
+
+- [Global Secure Acceleration (SCDN)](https://www.byteshield.com/en/services/scdn/): Global CDN with built-in security, intelligent DNS, and edge acceleration.
+- [Global Security Protection](https://www.byteshield.com/en/services/security/): Anti-DDoS up to 43Tbps, enterprise WAF, and CC attack protection.
+- [Global Streaming Acceleration](https://www.byteshield.com/en/services/streaming/): Low-latency live and on-demand streaming delivery with hotlink protection.
+- [SDK Secure Acceleration](https://www.byteshield.com/en/services/sdk/): In-app SDK that replaces DNS resolution to eliminate hijacking, pushes policies in seconds without app releases, and schedules traffic across 1,000+ multi-cloud BGP nodes with device risk detection and encrypted trusted connections.
+
+## Solutions
+
+- [China Cross-Border Acceleration](https://www.byteshield.com/en/solutions/china-cross/): China access without ICP filing, RIM and CN2 routes, integrated DDoS protection.
+- [iGaming & Online Gaming](https://www.byteshield.com/en/solutions/igaming/): Low-latency, attack-resistant infrastructure for gaming platforms.
+- [Online Media & Streaming](https://www.byteshield.com/en/solutions/online-media/): Delivery architecture for media and entertainment services.
+- [E-commerce Applications](https://www.byteshield.com/en/solutions/e-commerce/): Fast, secure storefronts and transaction APIs.
+- [AI Image Generation](https://www.byteshield.com/en/solutions/ai/): Acceleration and protection for AI image generation services.
+
+## Blog
+
+- [RIM vs CN2: A Complete Comparison for China Cross-Border Acceleration](https://www.byteshield.com/en/blog/rim-vs-cn2-china-acceleration/): Route architecture, DDoS scrubbing locations, and use cases for the two China acceleration routes.
+- [From DNS Hijacking to Second-Level Scheduling](https://www.byteshield.com/en/blog/app-security-acceleration-sdk/): Why DNS-dependent app protection fails and how a device-edge-cloud SDK architecture fixes it.
+- [Using a CDN as the Front-Line Load Balancer](https://www.byteshield.com/en/blog/cdn-as-load-balancer/): Traffic scheduling for surge events with edge caching and multi-origin failover.
+- [China Acceleration Without an ICP License](https://www.byteshield.com/en/blog/china-acceleration-without-icp/): How to serve China users from overseas infrastructure.
+- [Dynamic Acceleration for Cross-Border APIs](https://www.byteshield.com/en/blog/dynamic-acceleration-cross-border-api/): Reducing latency for API-heavy cross-border applications.
+- [Network Infrastructure in Emerging Markets](https://www.byteshield.com/en/blog/emerging-markets-network-infrastructure/): Delivery challenges and strategies in emerging markets.
+- [Gaming CDN and DDoS Protection](https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/): Keeping game platforms online under attack.
+- [Is Your CDN Actually Working?](https://www.byteshield.com/en/blog/is-your-cdn-actually-working/): Measuring real CDN effectiveness.
+- [Infrastructure for Large Live Events](https://www.byteshield.com/en/blog/large-live-event-infrastructure/): Architecture for high-concurrency live streaming.
+- [WAF and Application Security](https://www.byteshield.com/en/blog/waf-application-security/): How WAF protects websites, apps, and APIs.
+- [World Cup Streaming at Low Latency](https://www.byteshield.com/en/blog/world-cup-streaming-low-latency/): Lessons from world-scale sports streaming.
+
+## Company
+
+- [About Us](https://www.byteshield.com/en/about/): Company background and network scale.
+- [Pricing](https://www.byteshield.com/en/pricing/): Plan comparison.
+- [FAQ](https://www.byteshield.com/en/faq/): Trials, billing, and technical questions.
+- [Contact](https://www.byteshield.com/en/contact/): Talk to the ByteShield team via Telegram.
