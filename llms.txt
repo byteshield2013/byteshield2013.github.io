@@ -1,11 +1,16 @@
 # ByteShield
 
-> ByteShield is an Asia-Pacific cloud services brand providing global CDN acceleration, DDoS/WAF security protection, streaming acceleration, SDK-based app secure acceleration, and China cross-border solutions. All pages are available in Simplified Chinese (default, /zh/), English (/en/), and Japanese (/ja/); swap the locale segment in any URL below.
+> ByteShield is an Asia-Pacific cloud services brand providing global CDN acceleration, DDoS/WAF security protection, streaming acceleration, SDK-based app secure acceleration, and China cross-border solutions. Total network bandwidth exceeds 50 Tbps; the largest DDoS attack mitigated to date was 43 Tbps.
+
+## Main
+
+- [Home](https://www.byteshield.com/en/): Overview of ByteShield products, solutions, and network scale.
+- [Blog](https://www.byteshield.com/en/blog/): Articles on CDN, security, and cross-border acceleration.
 
 ## Products
 
 - [Global Secure Acceleration (SCDN)](https://www.byteshield.com/en/services/scdn/): Global CDN with built-in security, intelligent DNS, and edge acceleration.
-- [Global Security Protection](https://www.byteshield.com/en/services/security/): Anti-DDoS up to 43Tbps, enterprise WAF, and CC attack protection.
+- [Global Security Protection](https://www.byteshield.com/en/services/security/): Anti-DDoS backed by a 50 Tbps+ network (largest mitigated attack: 43 Tbps), enterprise WAF, and CC attack protection.
 - [Global Streaming Acceleration](https://www.byteshield.com/en/services/streaming/): Low-latency live and on-demand streaming delivery with hotlink protection.
 - [SDK Secure Acceleration](https://www.byteshield.com/en/services/sdk/): In-app SDK that replaces DNS resolution to eliminate hijacking, pushes policies in seconds without app releases, and schedules traffic across 1,000+ multi-cloud BGP nodes with device risk detection and encrypted trusted connections.
 
@@ -17,7 +22,7 @@
 - [E-commerce Applications](https://www.byteshield.com/en/solutions/e-commerce/): Fast, secure storefronts and transaction APIs.
 - [AI Image Generation](https://www.byteshield.com/en/solutions/ai/): Acceleration and protection for AI image generation services.
 
-## Blog
+## Blog Posts
 
 - [RIM vs CN2: A Complete Comparison for China Cross-Border Acceleration](https://www.byteshield.com/en/blog/rim-vs-cn2-china-acceleration/): Route architecture, DDoS scrubbing locations, and use cases for the two China acceleration routes.
 - [From DNS Hijacking to Second-Level Scheduling](https://www.byteshield.com/en/blog/app-security-acceleration-sdk/): Why DNS-dependent app protection fails and how a device-edge-cloud SDK architecture fixes it.
@@ -36,4 +41,9 @@
 - [About Us](https://www.byteshield.com/en/about/): Company background and network scale.
 - [Pricing](https://www.byteshield.com/en/pricing/): Plan comparison.
 - [FAQ](https://www.byteshield.com/en/faq/): Trials, billing, and technical questions.
-- [Contact](https://www.byteshield.com/en/contact/): Talk to the ByteShield team via Telegram.
+- [Contact](https://www.byteshield.com/en/contact/): Reach the ByteShield team via the inquiry form (Telegram also available on the zh and en sites).
+
+## Localized versions
+
+- [Simplified Chinese (default)](https://www.byteshield.com/zh/): Full Chinese translation of every page above; swap /en/ for /zh/ in any URL.
+- [Japanese](https://www.byteshield.com/ja/): Full Japanese translation of every page above; swap /en/ for /ja/ in any URL.

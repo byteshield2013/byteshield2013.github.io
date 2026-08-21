@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ByteShield Blog</title>
+    <link>https://www.byteshield.com/en/blog/</link>
+    <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>From DNS Hijacking to Second-Level Scheduling: The Evolution of App Security Acceleration</title>
+      <link>https://www.byteshield.com/en/blog/app-security-acceleration-sdk/</link>
+      <guid>https://www.byteshield.com/en/blog/app-security-acceleration-sdk/</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Why DNS-and-CDN app architectures fail under hijacking and pollution, and how a security acceleration SDK enables second-level device-edge scheduling.</description>
+    </item>
+    <item>
+      <title>RIM vs CN2: A Complete Comparison for China Cross-Border Acceleration</title>
+      <link>https://www.byteshield.com/en/blog/rim-vs-cn2-china-acceleration/</link>
+      <guid>https://www.byteshield.com/en/blog/rim-vs-cn2-china-acceleration/</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <description>RIM balances cost, cross-border performance, and protection flexibility; CN2 delivers low latency and stable routing. Compared by scrubbing and use cases.</description>
+    </item>
+    <item>
+      <title>How to Fix Cross-Border API Latency: Web Performance Optimization Through Dynamic Acceleration</title>
+      <link>https://www.byteshield.com/en/blog/dynamic-acceleration-cross-border-api/</link>
+      <guid>https://www.byteshield.com/en/blog/dynamic-acceleration-cross-border-api/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Pages load fast but login, search, and checkout lag? Dynamic acceleration cuts cross-border API latency with intelligent routing and TCP optimization.</description>
+    </item>
+    <item>
+      <title>Expanding Globally but Your Site Can&apos;t Keep Up? The Infrastructure Challenge Behind Emerging Markets</title>
+      <link>https://www.byteshield.com/en/blog/emerging-markets-network-infrastructure/</link>
+      <guid>https://www.byteshield.com/en/blog/emerging-markets-network-infrastructure/</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Public cloud plus a global CDN still leaves emerging-market users lagging. How dynamic acceleration and smart routing fix cross-border API latency.</description>
+    </item>
+    <item>
+      <title>Why Modern Businesses Need a WAF: From Passive Defense to Active Risk Management</title>
+      <link>https://www.byteshield.com/en/blog/waf-application-security/</link>
+      <guid>https://www.byteshield.com/en/blog/waf-application-security/</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Why modern businesses need a WAF: SQL injection, bot attacks, and API abuse hide in normal traffic that firewalls and DDoS protection cannot see.</description>
+    </item>
+    <item>
+      <title>Using CDN as a Front-Line Load Balancer: Modern Traffic Distribution at Scale</title>
+      <link>https://www.byteshield.com/en/blog/cdn-as-load-balancer/</link>
+      <guid>https://www.byteshield.com/en/blog/cdn-as-load-balancer/</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Use a CDN as a front-line load balancer: edge caching absorbs 80%+ of traffic before your data center, and multi-origin failover switches in seconds.</description>
+    </item>
+    <item>
+      <title>World Cup Streams Without Stutter: The Low-Latency Keys From CDN to Streaming Architecture</title>
+      <link>https://www.byteshield.com/en/blog/world-cup-streaming-low-latency/</link>
+      <guid>https://www.byteshield.com/en/blog/world-cup-streaming-low-latency/</guid>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
+      <description>What keeps World Cup streams smooth at peak: end-to-end latency control, adaptive bitrate (ABR), regional edge capacity, and China cross-border delivery.</description>
+    </item>
+    <item>
+      <title>From CDN to Cross-Border Routing: The Infrastructure Behind Large Live Events</title>
+      <link>https://www.byteshield.com/en/blog/large-live-event-infrastructure/</link>
+      <guid>https://www.byteshield.com/en/blog/large-live-event-infrastructure/</guid>
+      <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
+      <description>Keep large live events stable at peak: CDN distribution, cache and origin strategy, DDoS protection, and real-time monitoring for streaming platforms.</description>
+    </item>
+    <item>
+      <title>From Gaming CDN to Traffic Scrubbing: A Practical Look at DDoS Protection Strategy</title>
+      <link>https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/</link>
+      <guid>https://www.byteshield.com/en/blog/gaming-cdn-ddos-protection/</guid>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>Why gaming platforms are prime DDoS targets and how layered defenses, edge traffic scrubbing, rate limiting, and cross-border routing keep players online.</description>
+    </item>
+    <item>
+      <title>Is Your CDN Actually Working? A Troubleshooting Guide From Speed Tests to Cache Hit Ratio</title>
+      <link>https://www.byteshield.com/en/blog/is-your-cdn-actually-working/</link>
+      <guid>https://www.byteshield.com/en/blog/is-your-cdn-actually-working/</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>CDN in place but no speed gains? How to verify it with multi-region speed tests, TTFB, cache hit ratio, HIT/MISS headers, and cross-border route analysis.</description>
+    </item>
+    <item>
+      <title>China Acceleration: Improve Speed Without an ICP License</title>
+      <link>https://www.byteshield.com/en/blog/china-acceleration-without-icp/</link>
+      <guid>https://www.byteshield.com/en/blog/china-acceleration-without-icp/</guid>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Improve China access without an ICP license: cross-border CDN nodes in Hong Kong, Japan, or Singapore plus RIM and CN2 routes, with real latency numbers.</description>
+    </item>
+  </channel>
+</rss>
