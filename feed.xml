@@ -5,8 +5,15 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agent Security: How a Security CDN Defends Against API Abuse and DDoS</title>
+      <link>https://www.byteshield.com/en/blog/ai-agent-api-security-cdn/</link>
+      <guid>https://www.byteshield.com/en/blog/ai-agent-api-security-cdn/</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
+      <description>When AI agents start calling APIs on behalf of users, the question is no longer whether traffic is automated but which machine identity is behind it, what it may do, and whether its behavior makes sense. How AI agents create API abuse, resource exhaustion, and DDoS risk, and how a Security CDN builds layered defense.</description>
+    </item>
     <item>
       <title>From DNS Hijacking to Second-Level Scheduling: The Evolution of App Security Acceleration</title>
       <link>https://www.byteshield.com/en/blog/app-security-acceleration-sdk/</link>
