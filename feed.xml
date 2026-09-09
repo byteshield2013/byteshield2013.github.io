@@ -5,8 +5,15 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Acceleration SDK Capacity Guide: Bandwidth, DAU and QPS</title>
+      <link>https://www.byteshield.com/en/blog/sdk-bandwidth-dau-qps-guide/</link>
+      <guid>https://www.byteshield.com/en/blog/sdk-bandwidth-dau-qps-guide/</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <description>When companies evaluate a Security Acceleration SDK, the first questions are rarely about code: what resources power the routes, how bandwidth is calculated, and how to scale as users grow. A look at the SDK&apos;s globally distributed edge node architecture, what bandwidth, DAU, and QPS each measure, the two expansion paths, and what you can configure yourself in the console.</description>
+    </item>
     <item>
       <title>AI Agent Security: How a Security CDN Defends Against API Abuse and DDoS</title>
       <link>https://www.byteshield.com/en/blog/ai-agent-api-security-cdn/</link>

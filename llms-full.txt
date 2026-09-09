@@ -1,3 +1,144 @@
+# Security Acceleration SDK Capacity Guide: Bandwidth, DAU and QPS
+URL: https://www.byteshield.com/en/blog/sdk-bandwidth-dau-qps-guide/
+
+<div class="takeaways">
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li>The SDK does not pin every user to a single anti-DDoS IP. Clients connect to globally distributed edge nodes through a protected scheduling mechanism, and proxy nodes are separated from the origin.</li>
+<li>Plan capacity has three dimensions: business bandwidth, DAU, and QPS. Two apps with the same DAU can need very different resources depending on packet size and request patterns.</li>
+<li>There are two expansion paths: scale by DAU or scale by bandwidth. Every expansion pack includes the other two metrics, and bandwidth and DAU are never double-billed.</li>
+<li>Forwarding domains, ports, origin servers, and load balancing mode can all be configured self-service in the console, without contacting the vendor each time.</li>
+<li>Understand your business model first, then choose resource specs. Look at bandwidth, DAU, QPS, regions, and peak behavior together to avoid over-provisioning or running short.</li>
+</ul>
+</div>
+
+When companies evaluate a Security Acceleration SDK, the most common questions are rarely about how to write the code. They are more practical: What resources do SDK connections use? How is bandwidth calculated? How do we scale when users grow? Do routine changes require vendor assistance every time?
+
+These questions matter because the SDK is not just a piece of code dropped into an app. Once the client initializes, the SDK obtains a proxy IP and port from the scheduling platform, sends the original connection to an edge node, and the node forwards it to the enterprise origin. Route resources, scheduling logic, and plan capacity together determine real-world connection quality and how easily you can scale.
+
+The ByteShield Security Acceleration SDK runs on globally distributed edge nodes and performs intelligent scheduling based on real-time network quality, node load, and user location. Capacity planning looks at business bandwidth, DAU, and QPS together rather than relying on any single number.
+
+**This article answers four questions:**
+
+- What resources do SDK routes use, and how do they differ from traditional solutions?
+- What do bandwidth, DAU, and QPS each represent, and why do they need to be evaluated together?
+- How do you scale beyond base capacity, and how do you decide which direction to scale?
+- Can day-to-day configuration be done in-house, or does every change go through the vendor?
+
+## What resources do SDK routes use?
+
+The SDK does not pin every user to a single anti-DDoS IP. The client obtains the currently available proxy address through a protected scheduling mechanism and connects to globally distributed edge nodes. Traditional anti-DDoS solutions, by contrast, usually route all traffic to a handful of fixed IPs. Once one of those IPs is identified or attacked, every user's connection is affected.
+
+The platform then selects the appropriate connection path based on the user's location, network type, link latency, node load, and availability.
+
+Under the current product specification, the underlying resources include a global security acceleration network, hundreds of security acceleration nodes, and more than 1,000 multi-cloud BGP resources. The point is not node count for its own sake. It is to preserve room for dynamic switching and risk isolation when network fluctuations, local congestion, or attacks occur.
+
+For gaming, finance, e-commerce, and other app-based businesses, this architecture delivers three direct benefits:
+
+- Nearby access and intelligent routing reduce connection latency across regions and in weak-network environments.
+- Separating proxy nodes from the origin reduces the risk of exposing the origin IP and of targeted attacks against it.
+- When node load or risk conditions change, the scheduling platform can adjust access paths immediately, with no need to wait for DNS TTLs to expire.
+
+![ByteShield Security Acceleration SDK architecture: app and PC clients first obtain a path from the secure scheduling platform, then connect to global edge nodes (multi-cloud BGP resources, DDoS/CC protection) based on real-time network quality and intelligent routing, and finally traffic is forwarded to origin infrastructure with a hidden IP](/images/blog/sdk-architecture-overview.webp)
+
+## How is bandwidth calculated, and why look at DAU and QPS too?
+
+SDK plan resources are not measured by "how many GB of traffic" alone. Under the Professional plan specification, the base plan includes 10 Mbps of edge node business bandwidth and supports up to 2,000 DAU and 2,000 QPS. Each of these three metrics represents a different kind of capacity pressure:
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Metric</th><th>Base capacity in the plan</th><th>The real question it answers</th></tr>
+</thead>
+<tbody>
+<tr><td>Business bandwidth</td><td>10 Mbps</td><td>How much business data must be transferred at the same time</td></tr>
+<tr><td>DAU</td><td>2,000 DAU</td><td>How many active devices or users actually use the SDK each day</td></tr>
+<tr><td>QPS</td><td>2,000 QPS</td><td>How many requests per second must be handled at peak</td></tr>
+</tbody>
+</table>
+</div>
+
+As a result, two apps with the same DAU may need different bandwidth or QPS because of differences in packet size, login peaks, real-time match frequency, or API call patterns.
+
+For example, a real-time PvP game might have only 5,000 DAU but peak at 10,000 QPS, while a news app might have 50,000 DAU with relatively flat QPS and small payloads per request. Their resource needs are completely different, which is exactly why all three metrics have to be evaluated together.
+
+Before finalizing a plan, we recommend sharing your peak bandwidth, daily active users, peak QPS, primary regions, and protocol types so the technical team can evaluate them with you.
+
+## How do you scale beyond base capacity?
+
+The current specification offers two main expansion paths: scale by DAU, or scale by business bandwidth.
+
+- Each 200 DAU expansion pack also includes 1 Mbps of business bandwidth and 100 QPS.
+- Each 1 Mbps business bandwidth expansion also includes 200 DAU and 100 QPS.
+
+Bandwidth and DAU are not double-billed. Billing follows whichever dimension shows higher actual usage.
+
+This design reduces the chance of paying for the same resources twice. If your business mainly needs more DAU because of user growth, the plan adds a proportional amount of bandwidth and QPS at the same time. If the real bottleneck is large packets, or transfer demands such as video or update files, you can expand along the bandwidth axis instead. Actual pricing and billing cycles are governed by the latest contract and quotation.
+
+## Should you scale DAU or bandwidth?
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Business type</th><th>Recommended expansion path</th><th>Rationale</th></tr>
+</thead>
+<tbody>
+<tr><td>Membership systems, IoT device connections, instant messaging</td><td>Primarily DAU</td><td>User count keeps growing, but request volume per user stays relatively fixed</td></tr>
+<tr><td>Streaming media, game asset downloads, video content</td><td>Primarily bandwidth</td><td>Large payload per request, or frequent transfers of large files</td></tr>
+<tr><td>Real-time PvP, financial trading</td><td>Both equally</td><td>High QPS and low latency requirements at the same time, so headroom must be maintained</td></tr>
+</tbody>
+</table>
+</div>
+
+## Does ByteShield support self-service configuration in the console?
+
+Yes. Customers can log in to the console, select the relevant SDK plan, open its management page, and create or adjust forwarding rules on their own. Common configuration items include:
+
+- Setting a virtual domain to identify each forwarding rule. The name does not need public DNS resolution. Because the virtual domain is used only for internal rule identification and is never published through DNS, it does not expose your business architecture and cannot become a DNS hijacking target.
+- Setting the forwarding ports the SDK uses, such as 80, 443, or game service ports.
+- Choosing Round-Robin or IP Hash as the load balancing mode.
+- Entering one or more origin IPs and service ports.
+
+Each plan is provisioned with one AccessKey. Because all traffic under the same AccessKey shares that plan's scheduling and risk scope, companies running multiple apps should purchase and configure separate plans, so that a problem in one business does not affect the others.
+
+## When is a Security Acceleration SDK the right fit?
+
+The Security Acceleration SDK is especially suited to businesses with native apps or PC clients that depend on real-time connectivity and face acceleration and security needs at the same time. Examples include online gaming, real-time interaction, financial trading, membership systems, e-commerce apps, and IoT applications.
+
+More importantly, the SDK bypasses DNS resolution at the endpoint, so business connections are unaffected even if local DNS is hijacked. Scheduling policies can be pushed remotely in real time without waiting for an app release, which is critical for gaming and financial apps that cannot update their clients frequently.
+
+If you cannot modify the client or embed an SDK, consider SDK-free options such as <a href="/services/security">Security CDN</a>. Neither approach is strictly better than the other. The deciding factors are whether you control the client, which protocols you need to protect, and how far down the stack you want to extend security identification.
+
+## FAQ
+
+### Does the SDK use dedicated nodes?
+
+The base Professional plan uses a shared scheduling center and distributed node resources. Dedicated edge nodes are not part of the default configuration. If you need stronger resource isolation, dedicated node IPs, or a dedicated node group, our technical and sales teams can evaluate that separately.
+
+### Is 10 Mbps the bandwidth for the whole plan?
+
+It is the edge node business bandwidth included by default in the current Professional plan. Whether it is enough for you still depends on peak bandwidth, DAU, QPS, packet size, and the nature of your business.
+
+### Are DAU, QPS, and bandwidth billed separately?
+
+Under the current plan terms, bandwidth and DAU are not double-billed. Billing follows whichever dimension shows higher actual usage, and every expansion pack includes its corresponding bandwidth, DAU, and QPS. Final billing is governed by the latest contract.
+
+### Do all settings require vendor assistance?
+
+No. Forwarding domains, ports, origin servers, and load balancing mode can all be configured self-service in the console. For architecture planning, troubleshooting, and special resource requirements, we recommend working with the technical team.
+
+### Does the origin server need changes after adopting the SDK?
+
+Generally not. The origin only needs to allow the IP ranges of the SDK edge nodes (the platform provides the list) and have forwarding rules configured to match your business needs. No additional components are installed on the origin, and existing business logic is unaffected.
+
+## Understand the business model first, then choose resource specs
+
+The value of the SDK is not simply one more component on the client. It links endpoint identification, intelligent scheduling, global acceleration, origin hiding, and DDoS/CC protection into a complete connection architecture. The right plan cannot be decided by "how many users" alone. It has to account for bandwidth, DAU, QPS, regions, and peak behavior together.
+
+If you are evaluating a game shield or the <a href="/services/sdk">Security Acceleration SDK</a>, or want to confirm the bandwidth and capacity requirements of an existing app, <a href="/contact" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_us_click', location: 'blog'});">contact the ByteShield team for an architecture assessment and POC</a>. Based on your business type, peak traffic, and geographic distribution, we will help you pin down the resource specs you actually need and avoid over-provisioning or running short.
+
+---
+
 # AI Agent Security: How a Security CDN Defends Against API Abuse and DDoS
 URL: https://www.byteshield.com/en/blog/ai-agent-api-security-cdn/
 
