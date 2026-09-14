@@ -5,8 +5,15 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SDK Integration FAQ: Real IP, Proxy Protocol and Custom Headers</title>
+      <link>https://www.byteshield.com/en/blog/sdk-integration-real-ip-proxy-protocol/</link>
+      <guid>https://www.byteshield.com/en/blog/sdk-integration-real-ip-proxy-protocol/</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+      <description>The hardest part of integrating a Security Acceleration SDK is not the init function but the details of the proxy architecture: does the origin see the node IP or the player IP? Should real IP use Proxy Protocol, TOA, or an API? Does the SDK add custom headers? Why must you fetch a new proxy address after reconnecting? A walkthrough that follows the actual integration flow.</description>
+    </item>
     <item>
       <title>Security Acceleration SDK Capacity Guide: Bandwidth, DAU and QPS</title>
       <link>https://www.byteshield.com/en/blog/sdk-bandwidth-dau-qps-guide/</link>
