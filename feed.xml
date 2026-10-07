@@ -5,8 +5,22 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>From L3/L4 to L7: How to Build a Multi-Layer DDoS Defense Architecture</title>
+      <link>https://www.byteshield.com/en/blog/ddos-multi-layer-defense-l3-l7/</link>
+      <guid>https://www.byteshield.com/en/blog/ddos-multi-layer-defense-l3-l7/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Different DDoS attacks happen at different Layers, so a single protection mechanism is rarely enough. Learn which risks DDoS Protection, CC Defense, and Bot Management each handle, and how to build a multi-layer defense from Traffic to Request to Behavior.</description>
+    </item>
+    <item>
+      <title>DDoS Attack Types Explained: From Volumetric Floods to CC and L7 Attacks</title>
+      <link>https://www.byteshield.com/en/blog/ddos-attack-types-volumetric-cc-l7/</link>
+      <guid>https://www.byteshield.com/en/blog/ddos-attack-types-volumetric-cc-l7/</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>DDoS is not just a bandwidth problem. From Volumetric and Protocol to Application Layer (L7) attacks, each type drains a different resource: bandwidth, connections, or application processing capacity. Learn how BPS, PPS, RPS, and CC Attacks differ so you can tell which resource an attack is actually consuming.</description>
+    </item>
     <item>
       <title>SDK Integration FAQ: Real IP, Proxy Protocol and Custom Headers</title>
       <link>https://www.byteshield.com/en/blog/sdk-integration-real-ip-proxy-protocol/</link>

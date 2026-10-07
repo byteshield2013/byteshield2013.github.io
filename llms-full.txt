@@ -1,3 +1,370 @@
+# From L3/L4 to L7: How to Build a Multi-Layer DDoS Defense Architecture
+URL: https://www.byteshield.com/en/blog/ddos-multi-layer-defense-l3-l7/
+
+<div class="takeaways">
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li>Modern DDoS protection cannot be measured only by how much attack traffic it can absorb. It also needs different detection and mitigation methods depending on the Layer where the attack happens.</li>
+<li>Layer 1, DDoS Protection, handles abnormal Traffic, Packets, and Connections at L3/L4, focusing on BPS, PPS, SYN Rate, and Concurrent Connections.</li>
+<li>Layer 2, CC Defense, evaluates HTTP Requests and Request Patterns at L7, handling CC Attacks with custom rules, rate limiting, behavior-based verification, algorithmic signatures, and network-wide coordination.</li>
+<li>Layer 3, Bot Management, identifies Automated Traffic based on Client, Session, and Behavior. The goal is not to block every Bot, but to apply the right strategy for each type.</li>
+<li>The whole approach boils down to: Traffic → Request → Behavior.</li>
+</ul>
+</div>
+
+In our previous article, <a href="/blog/ddos-attack-types-volumetric-cc-l7">"DDoS Attack Types Explained: From Volumetric Floods to CC and L7 Attacks"</a>, we explained that different DDoS attacks consume different resources.
+
+Volumetric Attacks consume Bandwidth and Protocol Attacks consume Connections. At the Application Layer, HTTP Floods and CC Attacks can directly drain Web Server, API, or Database Resources.
+
+So even when the end result is the same (a degraded service), the underlying problem can be completely different. A flood of UDP Traffic is usually a Network Layer problem, while a flood of Login Requests may keep draining Application Resources through HTTP Requests that look perfectly normal.
+
+**Modern DDoS protection cannot be measured only by how much attack traffic it can absorb. It also needs different detection and mitigation methods depending on the Layer where the attack happens. This is the core of a multi-layer defense architecture.**
+
+## Why Might a Single Protection Mechanism Not Be Enough?
+
+When an attack happens at L3/L4, a business may face huge volumes of Packets, Connections, or Reflection Traffic. When an attack moves to L7, the attacker may be sending Requests that fully comply with the HTTP Protocol.
+
+For example, a `POST /login` could come from a real user, or from an Automated Client hammering the Login API. Looking only at the Network Layer, it is hard to tell whether these properly formatted Requests are putting the business at risk.
+
+That is why different Security Mechanisms do not replace one another. Each handles a different layer of the problem:
+
+- **Network / Transport Layer**: mainly monitors Traffic, Packets, and Connections
+- **Application Layer**: extends the analysis to HTTP Requests, URIs, API Endpoints, and Request Rate
+- **More sophisticated Automated Traffic**: requires deeper analysis of Client, Session, and Behavior
+
+The purpose of a multi-layer defense is to make sure anomalies at each Layer are identified and handled at the right place.
+
+## Layer 1 (DDoS Protection): Handle L3/L4 Abnormal Traffic First
+
+The first layer of a multi-layer defense deals with anomalies at the Network / Transport Layer.
+
+A SYN Flood can exhaust Connection Resources through masses of unfinished connections, while attacks like UDP Floods, ICMP Floods, or DNS Reflection can generate huge volumes of abnormal Traffic in a short time. The main job of L3/L4 protection is to identify and handle these Network / Transport Layer Attack Patterns before the traffic can affect the Application.
+
+ByteShield DDoS Protection covers the following attack types:
+
+- Land Flood, ICMP Flood
+- SYN Flood, SYN-ACK Flood, ACK Flood, FIN/RST Flood
+- TCP Reflection, Connection Exhaustion
+- TCP/UDP Fragmentation
+- DNS Reflection / Amplification
+
+It can also apply traffic control based on conditions such as GEOIP and Black/Whitelists, then further classify and handle traffic by Protocol, including ICMP, TCP, and UDP.
+
+This layer focuses on BPS, PPS, SYN Rate, and Concurrent Connections. When these metrics show clear anomalies, the first priority is to confirm whether the Network / Transport Layer is under attack.
+
+## Layer 2 (CC Defense): At L7, Start Evaluating Requests
+
+The absence of an obvious traffic spike at the Network Layer does not mean the service is not under attack.
+
+At the Application Layer, an attack may take the form of a flood of HTTP Requests. Individually, requests like `POST /login`, `GET /search`, or `GET /api/query` may all look normal. But if they arrive in large numbers in a short time, or concentrate on high-cost Endpoints such as Authentication, Database Query, or Search, they can keep draining Application Resources.
+
+L7 protection needs to go further and assess whether HTTP Requests and Request Patterns match normal business usage.
+
+ByteShield CC Defense lets you build custom rules by combining multiple HTTP conditions, paired with actions such as rate limiting, behavior-based verification, and JS challenges. For APP and API scenarios, Requests can also be verified with algorithmic signatures, or combined with a Challenge Mechanism to strengthen Client Verification.
+
+When attack sources are more distributed, an IP Blocklist alone may not be enough. CC Defense can also analyze anomalies through Request Patterns and behavioral characteristics, and use network-wide coordination so that identified CC Attack signatures and related defense policies take effect everywhere at once.
+
+At this layer, the information being monitored expands from Traffic, Packets, and Connections to HTTP Requests, URIs, API Endpoints, and Request Frequency.
+
+## Layer 3 (Bot Management): From Requests to Understanding Behavior
+
+In more complex L7 scenarios, evaluating individual Requests may still not be enough.
+
+A real user, a legitimate Crawler, and a Malicious Bot can all send the same `GET /product/123`. If Automated Traffic also uses Distributed IPs, varied User-Agents and Request Intervals, or even mimics ordinary browsing flows, it becomes even harder to tell Clients apart using IPs or fixed Request Rules alone.
+
+That is why L7 protection needs to extend from Request Analysis to Client and Behavior Analysis.
+
+ByteShield Bot Management uses a library of known Bots and intelligent detection to classify different kinds of Automated Traffic, including partner Bots, monitoring Bots, aggregator Bots, malicious UA Bots, fake search engine Bots, and other known Automated Traffic.
+
+But a Bot is not inherently malicious traffic. Search engines, Monitoring Services, and partner services can all generate legitimate and necessary Bot Traffic. So the goal of Bot Management is not to block every Bot. It is to first identify each Bot's type and behavior, then apply strategies based on business needs, such as monitoring, blocking, banning, human verification, or precise access control.
+
+At this layer, the basis for decisions expands from individual HTTP Requests to Client, Session, and Behavior.
+
+## From Traffic to Request to Behavior: How Multi-Layer Defense Works
+
+Put the three layers together, and you can see the overall logic of ByteShield's multi-layer defense:
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>What you observe</th><th>Responsible layer</th><th>Mitigation focus</th></tr>
+</thead>
+<tbody>
+<tr><td>Large volumes of SYN, UDP, ICMP, or Reflection / Amplification Traffic</td><td>DDoS Protection</td><td>Handle L3/L4 Network / Transport Layer anomalies first</td></tr>
+<tr><td>No obvious Network Traffic anomaly, but HTTP RPS is rising, or Requests are concentrated on /login, /search, /api/query</td><td>CC Defense</td><td>Analyze Request Patterns, Access Frequency, and Client Verification</td></tr>
+<tr><td>Individual Requests look normal, but large amounts of similar Automated Behavior appear</td><td>Bot Management</td><td>Identify and manage based on Client, Session, and Behavior</td></tr>
+</tbody>
+</table>
+</div>
+
+The whole approach boils down to: **Traffic → Request → Behavior**
+
+In other words, it starts with traffic detection at the Network Layer, then extends step by step to Request Analysis at the Application Layer, and further to Behavior Analysis.
+
+## Multi-Layer Defense Does Not Mean Blocking All Traffic
+
+The point of multi-layer protection is not for every Security Control to apply the same blocking logic.
+
+Real Users, legitimate Crawlers, partner services, and Malicious Bots can all coexist in a website's traffic, so each Security Layer should handle the problems it is best placed to identify.
+
+ByteShield DDoS Protection mainly handles abnormal Traffic, Packets, and Connections. CC Defense goes further, analyzing HTTP Requests, Access Frequency, and Client Verification. Bot Management applies different management strategies based on Bot Type and Behavior.
+
+The closer you get to the Application and Business Layer, the more granular the information you need to understand.
+
+## From "Absorbing Traffic" to "Understanding Traffic"
+
+Large Volumetric Attacks have not gone away, so Network Layer DDoS Protection remains an essential foundation of any security architecture.
+
+But once an attack reaches the Application Layer, knowing how many Gbps you are absorbing is no longer enough. The signals a business needs to watch expand from BPS, PPS, and Connections to RPS, URIs, API Endpoints, Clients, Sessions, and Behavior.
+
+**L3/L4 looks at Traffic, L7 looks at Requests, and more sophisticated Automated Traffic requires a deeper understanding of Behavior.**
+
+## ByteShield: Multi-Layer Security Protection from L3/L4 to L7
+
+Every business faces different Traffic Patterns, Application Architectures, API usage, and business scenarios, so the Security Policies they need will differ too.
+
+Through DDoS Protection, CC Defense, and Bot Management, ByteShield builds protection and management mechanisms across every layer, from Network Traffic and HTTP Requests to Automated Behavior, helping Web, APP, and API businesses reduce the impact of every type of Attack Traffic on their services.
+
+The core of multi-layer protection is not just raising how much attack traffic you can withstand. More importantly, it is about adding detection capability layer by layer, so that each type of anomaly is caught and handled at the right Layer.
+
+## FAQ
+
+### Why might a single DDoS protection mechanism not be enough?
+
+L3/L4 attacks mostly involve large volumes of Packets, Connections, or Reflection Traffic, while L7 attacks may consist of Requests that fully comply with the HTTP Protocol. Looking only at the Network Layer, it is hard to tell whether properly formatted Login or API requests are creating business risk, so you need mechanisms at different Layers, each handling the problems it is best placed to identify.
+
+### What do DDoS Protection, CC Defense, and Bot Management each handle?
+
+DDoS Protection handles abnormal Traffic, Packets, and Connections at L3/L4, mainly monitoring BPS, PPS, SYN Rate, and Concurrent Connections. CC Defense analyzes HTTP Requests, URIs, API Endpoints, and Access Frequency at L7. Bot Management identifies and manages Automated Traffic based on Client, Session, and Behavior.
+
+### Will Bot Management also block search engine or partner Bots?
+
+Not across the board. Bot Management first identifies a Bot's type and behavior, then applies strategies based on business needs, such as monitoring, blocking, banning, human verification, or precise access control. Legitimate Bot Traffic from search engines, Monitoring Services, and partner services can be allowed through.
+
+### How does CC Defense handle attacks from highly distributed sources?
+
+When attack sources are distributed, an IP Blocklist alone may not be enough. CC Defense can analyze anomalies through Request Patterns and behavioral characteristics, verify Requests with algorithmic signatures in APP and API scenarios, and use network-wide coordination so that identified CC Attack signatures and defense policies take effect everywhere at once.
+
+If you have related needs, explore ByteShield's <a href="/services/security">security protection services</a>, or <a href="/contact" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_us_click', location: 'blog'});">contact the ByteShield team</a> and we will recommend the right solution for your existing application architecture and business needs.
+
+---
+
+# DDoS Attack Types Explained: From Volumetric Floods to CC and L7 Attacks
+URL: https://www.byteshield.com/en/blog/ddos-attack-types-volumetric-cc-l7/
+
+<div class="takeaways">
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li>Assessing a DDoS attack is not just about asking "how big is the attack traffic?" You also need to know which resource the attack is consuming: bandwidth, connections, or application processing capacity.</li>
+<li>Volumetric Attacks are measured in BPS and aim to saturate bandwidth. Protocol Attacks are measured by PPS, SYN Rate, and Concurrent Connections, and aim to exhaust connection resources.</li>
+<li>L7 and CC Attacks send Requests that fully comply with the HTTP Protocol. The traffic is not necessarily large, but it can be concentrated on high-cost Endpoints such as Login, Search, and APIs.</li>
+<li>At L7, a single Request is almost impossible to tell apart from a real user or a malicious Bot. You need Request Frequency, Fingerprint, Session, and Behavior data to understand "what is this Client actually doing?"</li>
+</ul>
+</div>
+
+When businesses talk about DDoS protection, the first things that come to mind are usually bandwidth and scrubbing capacity: how many Gbps can it absorb? Can it handle Tbps-scale floods?
+
+Those questions matter, but they no longer describe the full DDoS risk. Beyond Volumetric Attacks that saturate bandwidth, an attack can also drain TCP connections, Web Servers, APIs, or Database resources.
+
+At Layer 7 (L7) in particular, attack traffic is not always especially large. A flood of normal-looking HTTP Requests can steadily drain application resources through high-cost Endpoints such as Login, Search, and APIs.
+
+So assessing a DDoS attack is not just about asking "how big is the attack traffic?" You also need to answer: **which resource is the attack consuming?**
+
+## What Is a DDoS Attack?
+
+DDoS (Distributed Denial of Service) is an attack that uses traffic or requests from many distributed sources to exhaust a target's resources, so that legitimate users can no longer access the service.
+
+But different DDoS attacks consume different resources. From the network layer to the application layer, common DDoS attacks fall into three broad categories:
+
+1. Volumetric Attack: traffic-based attacks
+2. Protocol / L3-L4 Attack: protocol-based attacks
+3. Application / L7 Attack: application-layer attacks
+
+On top of that, at the application layer, Automated Bot Traffic can also overlap with HTTP Floods, CC Attacks, and API Abuse.
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Attack type</th><th>Primary target</th><th>Common examples</th><th>Key metrics to watch</th></tr>
+</thead>
+<tbody>
+<tr><td>Volumetric Attack</td><td>Network Bandwidth</td><td>UDP Flood, DNS Amplification</td><td>BPS</td></tr>
+<tr><td>Protocol / L3-L4 Attack</td><td>TCP Connections, Network Resources</td><td>SYN Flood, Connection Exhaustion</td><td>PPS, Concurrent Connections</td></tr>
+<tr><td>Application / L7 Attack</td><td>Web Servers, APIs, Applications, Databases</td><td>HTTP Flood, CC Attack, API Flood</td><td>RPS, URI / API Endpoint, HTTP Status</td></tr>
+<tr><td>Automated Bot Traffic*</td><td>Business Logic, Accounts, APIs</td><td>Login Abuse, Scraping, Automated Requests</td><td>Fingerprint, Session, Behavior</td></tr>
+</tbody>
+</table>
+</div>
+
+<small>* Automated Bot Traffic is not necessarily DDoS in itself, but at the application layer it can overlap with HTTP Floods, CC Attacks, and API Abuse.</small>
+
+## Type 1: Volumetric Attacks Aim to Saturate Bandwidth
+
+The Volumetric Attack is the most intuitive type of DDoS attack. Its goal is simple: flood the target's network bandwidth with so much traffic that legitimate user traffic cannot get through.
+
+Common methods include:
+
+- UDP Flood
+- DNS Amplification
+- Reflection / Amplification Attack
+
+These attacks are usually measured in BPS (Bits Per Second). When BPS spikes abnormally in a short period, approaching or even exceeding the bandwidth the network can carry, the result can be:
+
+**Packet Loss → Rising Latency → Connection Timeout → Service becomes unreachable**
+
+The defining trait of a Volumetric Attack, then, is using sheer traffic volume to consume network capacity. The flip side is that bandwidth not being maxed out does not mean you are free of DDoS, because the next type of attack targets an entirely different resource.
+
+## Type 2: Protocol Attacks Can Take a Service Down Without Saturating Bandwidth
+
+Protocol Attacks do not target bandwidth itself. They target network protocols and connection resources. One of the classic examples is the SYN Flood.
+
+A normal TCP connection requires a three-way handshake:
+
+1. The Client sends a SYN
+2. The Server replies with a SYN-ACK
+3. The Client returns an ACK, and the Connection is Established
+
+In a SYN Flood, however, the attacker sends huge numbers of SYN Requests without ever completing the connection.
+
+The Server has to temporarily hold on to the Connection State for each of these unfinished connections. As half-open connections keep piling up, they can exhaust the connection resources of the Server, Firewall, Load Balancer, or other intermediate devices, leaving legitimate users unable to establish new Connections.
+
+That is why BPS alone is not enough for this kind of attack. Metrics such as PPS (Packets Per Second), Concurrent Connections, and SYN Rate are often far more telling.
+
+Put simply: Volumetric Attacks are about "how much traffic is there," while Protocol Attacks require you to watch "how many packets and connections the system is handling."
+
+## Type 3: Application Layer / L7 Attacks Are Not Always Large, but They Can Be Costly
+
+At Layer 7, DDoS attacks become far more complex, because what the attacker sends is not necessarily an abnormal packet. It may be a Request that fully complies with the HTTP Protocol. For example:
+
+```http
+GET /product/123
+POST /login
+GET /api/search
+```
+
+From the Network Layer's perspective, all of these may look like normal TCP / HTTPS Traffic.
+
+**The real question is: how much does it cost the server to process each Request?**
+
+For instance, a single Login Request may involve:
+
+**Account validation → Database Query → Token Verification → Session creation → Response**
+
+A single Search API call may involve a Database Query, a Search Index, or other Backend Computation.
+
+If large numbers of Requests keep hitting these high-cost Endpoints, CPU, Database Connections, Application Threads, or API Resources can be heavily tied up, even when total Bandwidth shows no obvious increase.
+
+This is what makes Application Layer DDoS so troublesome: the attack traffic can look almost identical to real users.
+
+## What Is a CC Attack, and Why Is It an L7 Attack?
+
+CC Attack (Challenge Collapsar) is a term commonly used for application-layer attacks that send large volumes of HTTP Requests to continuously drain Web Server or Application Resources.
+
+The biggest difference from a traditional high-volume DDoS attack is this: **a Volumetric Attack mainly consumes network capacity, while a CC Attack is closer to consuming the service's processing capacity.**
+
+For example, an attacker may repeatedly request:
+
+- `/login`
+- `/search`
+- `/api/query`
+- `/product`
+- Dynamic Page
+- Uncached Content
+
+Say a single `/login` Request is only a few KB, so its impact on Bandwidth is minimal. But if every Request requires a Database Query, Authentication, or other Application Logic, then as requests pile up, it is the backend resources that actually get exhausted.
+
+So a website with plenty of bandwidth is not necessarily able to withstand a large volume of CC / L7 Requests. This is also why RPS (Requests Per Second) is usually far more meaningful than BPS alone when identifying a CC Attack.
+
+## BPS, PPS, RPS: What Should You Look at During an Attack?
+
+In many DDoS incidents, the first step is not to start blocking IPs right away. It is to determine which layer of resources is actually behaving abnormally.
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>What you observe</th><th>Check first</th><th>Likely attack type</th></tr>
+</thead>
+<tbody>
+<tr><td>Sudden surge in Bandwidth</td><td>BPS</td><td>Volumetric Attack</td></tr>
+<tr><td>Abnormal increase in Packet count</td><td>PPS</td><td>L3/L4 Attack</td></tr>
+<tr><td>Large increase in SYN / Connections</td><td>Connection / SYN Rate</td><td>Protocol Attack</td></tr>
+<tr><td>Sudden surge in HTTP Requests</td><td>RPS</td><td>HTTP Flood / CC</td></tr>
+<tr><td>Abnormal concentration on Login / Search / API</td><td>URI / API Endpoint</td><td>L7 / API Abuse</td></tr>
+<tr><td>Many different IPs showing similar behavior</td><td>Fingerprint / Session / Behavior</td><td>Automated Bot</td></tr>
+</tbody>
+</table>
+</div>
+
+In short:
+
+- BPS tells you how much traffic the network is carrying
+- PPS tells you how many packets the network is processing
+- RPS starts to tell you how many requests the application is handling
+
+At L7, no single one of these metrics is enough to fully characterize an attack.
+
+## Why Are CC / L7 Attacks Harder to Identify Than Traditional DDoS?
+
+Imagine three Requests:
+
+- A real user: `GET /product/123`
+- An ordinary Crawler: `GET /product/123`
+- A malicious Bot: `GET /product/123`
+
+Looking at a single HTTP Request, there may be no visible difference between them. So at L7, a protection system cannot just ask "is this IP on a blocklist?" It also needs to look at:
+
+- Request Frequency and Request Interval
+- URI / API Endpoint
+- IP / ASN Distribution
+- User-Agent, TLS / Device Fingerprint
+- Cookie / Session, Navigation Pattern, and Historical Behavior
+
+For example, a Client requesting a product page at perfectly identical intervals, or many different IPs producing highly consistent Request Sequences, can be far more revealing than IP Reputation alone.
+
+And when Automated Traffic goes further, combining Distributed IPs, varied User-Agent / Client characteristics, varied Request Intervals, and varied APIs / Endpoints, or even mimicking ordinary browsing, the effectiveness of a plain IP Blocklist drops even more.
+
+At L7, the question shifts from "where is this Request coming from?" to "what is this Client actually doing?"
+
+Keep in mind that a Bot is not the same thing as DDoS. Search engine Crawlers, Monitoring Services, and other legitimate automated tools can also be Automated Traffic. What really needs to be identified is whether this automated behavior is generating large volumes of abnormal Requests, Login Abuse, Scraping, API Abuse, or other application and business risks.
+
+The challenge at L7 is not just spotting abnormal packets. It is spotting abnormal behavior.
+
+## As Attacks Look More Like Normal Traffic, How Do You Tell Them Apart and Stop Them?
+
+From Volumetric and Protocol to L7, different DDoS attacks target different resources: **bandwidth → connections → application processing capacity**.
+
+That means businesses can no longer watch only BPS and PPS. Monitoring has to extend to RPS, API Endpoints, Sessions, Fingerprints, and Behavior. Once an attack reaches L7, malicious Requests may show no obvious difference from real users at all.
+
+Which raises the next question: if different attacks happen at different Layers, is a single type of protection really enough?
+
+In the next article, <a href="/blog/ddos-multi-layer-defense-l3-l7">"From L3/L4 to L7: How to Build a Multi-Layer Defense Architecture"</a>, we look at this from an architecture perspective, breaking down which risks DDoS Protection, CC Defense, and Bot Management each handle, and how ByteShield helps businesses build a multi-layer defense from L3/L4 to L7.
+
+## FAQ
+
+### What are the main types of DDoS attacks?
+
+From the network layer up to the application layer, common DDoS attacks fall into three broad categories: Volumetric Attacks (which consume bandwidth), Protocol / L3-L4 Attacks (which exhaust TCP connections and network resources), and Application / L7 Attacks (which drain Web Server, API, and Database resources). At the application layer, Automated Bot Traffic can also overlap with HTTP Floods, CC Attacks, and API Abuse.
+
+### How is a CC Attack different from a traditional high-volume DDoS attack?
+
+A Volumetric Attack mainly consumes network capacity. A CC Attack sends large numbers of HTTP Requests to high-cost Endpoints such as /login, /search, and APIs, consuming the service's processing capacity instead. A single request may be only a few KB, but each one triggers a Database Query or authentication, and together they can saturate backend resources.
+
+### During an attack, should I look at BPS, PPS, or RPS?
+
+BPS shows how much traffic the network is carrying and is the key signal for Volumetric Attacks. PPS, along with SYN Rate and Concurrent Connections, shows how many packets and connections the system is handling, which helps identify Protocol Attacks. RPS shows how many requests the application is taking on, which helps identify HTTP Floods and CC Attacks. At L7, you also need URI, Fingerprint, Session, and Behavior data to get the full picture.
+
+### If bandwidth is not maxed out, does that mean there is no DDoS attack?
+
+Not necessarily. A Protocol Attack can exhaust the connection resources of a Server, Firewall, or Load Balancer with masses of half-open connections, and an L7 attack can concentrate on draining application resources with normal-looking HTTP Requests. Neither has to cause a noticeable spike in bandwidth.
+
+### Is all bot traffic DDoS?
+
+No. Legitimate automated tools such as search engine Crawlers and Monitoring Services also count as Automated Traffic. What really needs to be identified is whether automated behavior is generating large volumes of abnormal Requests, Login Abuse, Scraping, API Abuse, or other business risks.
+
+If your website, app, or API is facing abnormal traffic, explore ByteShield's <a href="/services/security">security protection services</a>, or <a href="/contact" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_us_click', location: 'blog'});">contact the ByteShield team</a> and we will help you pinpoint which layer of resources the attack is consuming.
+
+---
+
 # SDK Integration FAQ: Real IP, Proxy Protocol and Custom Headers
 URL: https://www.byteshield.com/en/blog/sdk-integration-real-ip-proxy-protocol/
 
