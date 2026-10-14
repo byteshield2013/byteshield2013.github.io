@@ -5,8 +5,15 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How Does Multi-CDN Achieve Smart Traffic Steering? From DNS Resolution to Cross-CDN Traffic Splitting and Failover</title>
+      <link>https://www.byteshield.com/en/blog/multi-cdn-dns-traffic-steering/</link>
+      <guid>https://www.byteshield.com/en/blog/multi-cdn-dns-traffic-steering/</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>When a business uses several CDNs at once, how should it distribute traffic and fail over? Learn how DNS Traffic Steering manages Multi-CDN traffic entry points through Geolocation Routing, Weighted Routing, and CNAME / IP onboarding.</description>
+    </item>
     <item>
       <title>From L3/L4 to L7: How to Build a Multi-Layer DDoS Defense Architecture</title>
       <link>https://www.byteshield.com/en/blog/ddos-multi-layer-defense-l3-l7/</link>
