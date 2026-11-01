@@ -5,8 +5,15 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Can&apos;t Patch a PHP Vulnerability Right Away? Use a WAF to Reduce Risk and Buy Time for Server Updates</title>
+      <link>https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/</link>
+      <guid>https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>When a critical PHP vulnerability goes public, server updates still need version checks, compatibility testing, and a deployment plan. Learn how WAF virtual patching reduces exploitation risk at the traffic entry point, the three things to confirm first, and how to roll out the patch in stages.</description>
+    </item>
     <item>
       <title>How Does Multi-CDN Achieve Smart Traffic Steering? From DNS Resolution to Cross-CDN Traffic Splitting and Failover</title>
       <link>https://www.byteshield.com/en/blog/multi-cdn-dns-traffic-steering/</link>

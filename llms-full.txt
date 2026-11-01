@@ -1,3 +1,115 @@
+# Can't Patch a PHP Vulnerability Right Away? Use a WAF to Reduce Risk and Buy Time for Server Updates
+URL: https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/
+
+<div class="takeaways">
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li>On October 21, 2026, PHP released security updates fixing CVE-2026-109618 and CVE-2026-109619, two vulnerabilities that could allow unauthenticated remote code execution (RCE).</li>
+<li>Server updates require version checks, compatibility testing, coordination with system vendors, and a deployment plan, and until the patch is in place, affected services may remain exposed to the internet.</li>
+<li>WAF virtual patching lets you deploy protection at the traffic entry point without first changing application code, buying time for the necessary patch testing and updates.</li>
+<li>Virtual patching does not remove the vulnerability from the server. Before relying on it, confirm the rules cover this CVE, every relevant entry point passes through the WAF, and the rules are active without breaking normal functions.</li>
+<li>A patching plan should name an owner, priorities, deadlines, and acceptance criteria, then complete the update in stages with ongoing monitoring and tuning.</li>
+</ul>
+</div>
+
+When a critical vulnerability goes public, a business's most urgent need is to cut the risk of its website being attacked as quickly as possible. Server updates, however, usually mean confirming versions, testing compatibility, contacting system vendors, and then scheduling a production deployment. For websites that are constantly handling logins, transactions, and orders, all of this takes time.
+
+The recent PHP vulnerabilities once again highlight the gap between deploying protection and patching servers. Businesses can consider applying verified protection rules through a WAF first, reducing the risk of a specific exploit at the traffic entry point while the server update moves forward.
+
+This is where WAF virtual patching proves its value: protection goes in first, buying time for the patch testing and updates that still have to happen.
+
+## The Vulnerability Is Public, but the Server Update Takes Preparation
+
+On October 21, 2026, PHP released security updates fixing CVE-2026-109618 and CVE-2026-109619, two vulnerabilities that could allow unauthenticated remote code execution (RCE). Confirming what is affected and completing the update is the core of dealing with the risk.
+
+In practice, one server may host several websites, and it may depend on existing frameworks, plugins, or third-party services. Before updating, the team needs to confirm that login, payment, file upload, and API integrations still work, and prepare both a deployment plan and a rollback plan.
+
+This preparation is necessary, but until the patch is in place, affected services may stay exposed to the internet. That leaves businesses with two jobs to run in parallel: reduce the chance of outside attacks reaching their systems as quickly as possible, and complete the update on a set timeline.
+
+## Protect the Entry Point First: How Does WAF Virtual Patching Work?
+
+A WAF (Web Application Firewall) sits between the website and its users, inspects HTTP requests against a set of rules, and takes action, such as blocking, on abnormal requests that match.
+
+When a vulnerability has identifiable attack signatures and the WAF supports the matching inspection and rules, a business can deploy protection at the traffic entry point without first changing its application code. Reducing exploitation risk through external rules like this is usually called virtual patching.
+
+When the rules and deployment conditions are in place, entry-point rules can often be applied to the relevant services faster than a server environment can be tested and updated machine by machine, shortening the time a business spends waiting for protection.
+
+That said, virtual patching does not remove the vulnerability from the server. What it covers depends on the rules, request inspection capabilities, and the actual traffic paths. PHP has also stated clearly that for these two vulnerabilities, updating is the only complete fix, and no other mitigation can make an unpatched environment safe.
+
+Businesses should therefore treat the WAF as a risk mitigation measure during the patching window and keep the update moving.
+
+## Three Things to Confirm Before Relying on Protection First
+
+### Do the rules actually address this vulnerability?
+
+Turning on general WAF rules is not enough. You still need to confirm whether your provider offers protection for this specific CVE, which attack paths it covers, and what its known limitations are.
+
+The scope of request inspection, encoding handling, and size limits can all affect how well a rule works. Any claim of protection against a specific vulnerability should be backed by actual support and verified results.
+
+### Does every relevant entry point pass through the WAF?
+
+The main website, APIs, admin panels, and other subdomains may each reach the internet through a different path. If only part of the traffic goes through the WAF, the other entry points can still be exposed to attack.
+
+Businesses should take inventory of every relevant entry point and, depending on their architecture, restrict access to the origin server, making it harder for attackers to connect to the origin directly and bypass the entry-point protection.
+
+### Are the rules active, and do normal functions still work?
+
+After deploying the rules, confirm they apply to the right scope and turn on blocking measures appropriate to the risk. A monitor mode that only logs requests can help you understand the impact, but it will not stop requests from reaching the backend.
+
+During verification, also test normal login, form submission, payment, file upload, and API calls. If there are false positives, adjust the rules for the specific paths and conditions involved rather than loosening restrictions across the whole service.
+
+## With Protection in Place, How Should You Schedule the Server Patch?
+
+Once the WAF rules are deployed, the team can move testing and updates forward according to business needs while continuing to monitor the remaining risk. The patching plan should clearly set out an owner, priorities, deadlines, and acceptance criteria.
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Stage</th><th>Core work</th><th>Outcome to confirm</th></tr>
+</thead>
+<tbody>
+<tr><td>Reduce risk quickly</td><td>Inventory public entry points, confirm the matching rules, deploy and verify WAF protection; restrict access to non-public functions as needed</td><td>A clear picture of rule coverage, deployment status, and remaining risk</td></tr>
+<tr><td>Test the patch</td><td>Confirm compatibility of PHP, frameworks, and plugins, test key business flows, prepare backup and rollback plans</td><td>Identify what the update might affect and be ready to deploy</td></tr>
+<tr><td>Update in stages</td><td>Schedule updates by exposure and business importance, confirm the patch is applied in the environments actually serving traffic</td><td>Patch status confirmed for each version or package, service functions verified</td></tr>
+<tr><td>Keep tracking and tuning</td><td>Review logs and anomalies, decide whether temporary rules should stay or be adjusted</td><td>No unpatched systems left behind, protection settings keep improving</td></tr>
+</tbody>
+</table>
+</div>
+
+If a system cannot be patched in time and existing measures are not enough to control the risk, consider isolating it or taking it offline until the patch is applied and verified. If there are signs of a possible intrusion, that also needs a separate investigation and response.
+
+## ByteShield WAF: Bridging Immediate Protection and the Patch That Follows
+
+ByteShield provides services including WAF and security acceleration CDN, helping businesses deploy the right protection policies before traffic reaches the origin server.
+
+When a major vulnerability hits, businesses can work with the ByteShield team to confirm how their websites and APIs are connected, the scope of WAF rule support, and their origin access settings. Protection against any specific CVE should be judged by the actual rules, deployment status, and verification results.
+
+By combining entry-point protection with server patching, businesses can take verifiable risk reduction measures first while the necessary testing and deployment move ahead.
+
+To learn more about the role a WAF plays in business website security, see <a href="/blog/waf-application-security">"Why Modern Businesses Need a WAF"</a>.
+
+## FAQ
+
+### What is WAF virtual patching?
+
+When a vulnerability has identifiable attack signatures and the WAF supports the matching inspection and rules, a business can deploy protection at the traffic entry point without first changing its application code. Reducing exploitation risk through external rules like this is usually called virtual patching.
+
+### Do I still need to update the server after deploying WAF virtual patching?
+
+Yes. Virtual patching does not remove the vulnerability from the server, and how much it covers depends on the rules, request inspection capabilities, and the actual traffic paths. PHP has also stated clearly that for these two vulnerabilities, updating is the only complete fix. Treat the WAF as a risk mitigation measure during the patching window and keep the update moving.
+
+### What should I confirm before relying on a WAF to protect first?
+
+Three things: whether the rules actually address this specific vulnerability; whether every relevant entry point, including the main site, APIs, admin panels, and other subdomains, passes through the WAF; and whether the rules are active while normal functions such as login, form submission, payment, file upload, and API calls still work.
+
+### What if a particular system cannot be patched in time?
+
+If a system cannot be patched in time and existing measures are not enough to control the risk, consider isolating it or taking it offline until the patch is applied and verified. If there are signs of a possible intrusion, that also needs a separate investigation and response.
+
+If your website needs time to finish patching a vulnerability, take a look at <a href="/services/security">ByteShield Security CDN</a>, or <a href="/contact" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_us_click', location: 'blog'});">contact ByteShield here</a>. We will help you assess the right WAF protection strategy for your application architecture and business needs, and support you through the updates that follow.
+
+---
+
 # How Does Multi-CDN Achieve Smart Traffic Steering? From DNS Resolution to Cross-CDN Traffic Splitting and Failover
 URL: https://www.byteshield.com/en/blog/multi-cdn-dns-traffic-steering/
 
