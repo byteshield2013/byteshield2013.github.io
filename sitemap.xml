@@ -151,6 +151,16 @@
 <priority>0.8</priority>
 </url>
 <url>
+<loc>https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/" />
+<lastmod>2026-11-04T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
 <loc>https://www.byteshield.com/zh/blog/php-vulnerability-virtual-patching-waf/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/php-vulnerability-virtual-patching-waf/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/" />
@@ -481,6 +491,16 @@
 <priority>0.8</priority>
 </url>
 <url>
+<loc>https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/" />
+<lastmod>2026-11-04T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
 <loc>https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/</loc>
 <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/php-vulnerability-virtual-patching-waf/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/" />
@@ -809,6 +829,16 @@
 <lastmod>2026-08-12T02:05:19.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.byteshield.com/ja/blog/cdn-cache-poisoning-cache-key/</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://www.byteshield.com/ja/blog/cdn-cache-poisoning-cache-key/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/" />
+<lastmod>2026-11-04T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://www.byteshield.com/ja/blog/php-vulnerability-virtual-patching-waf/</loc>

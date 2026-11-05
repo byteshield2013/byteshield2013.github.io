@@ -5,8 +5,15 @@
     <link>https://www.byteshield.com/en/blog/</link>
     <description>Articles on CDN acceleration, DDoS/WAF security, and China cross-border delivery from the ByteShield team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.byteshield.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What Is CDN Cache Poisoning? Cache Keys, Request Handling, and the Keys to Prevention</title>
+      <link>https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/</link>
+      <guid>https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The same URL does not always mean the same content. Learn how CDN cache poisoning happens, and how cache keys, caching directives, and staged testing keep your CDN&apos;s decisions in line with your origin.</description>
+    </item>
     <item>
       <title>Can&apos;t Patch a PHP Vulnerability Right Away? Use a WAF to Reduce Risk and Buy Time for Server Updates</title>
       <link>https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/</link>

@@ -1,0 +1,154 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[2619,["2619","static/chunks/2619-3c9e02e22d10480a.js","4345","static/chunks/app/not-found-6e606d199f72e814.js"],"*"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/753912fc05c0034a.css","style"]
+0:{"P":null,"b":"Iq9mYWfpJwmlHXavyZtRW","p":"","c":["","zh","blog","cdn-cache-poisoning-cache-key",""],"i":false,"f":[[["",{"children":[["locale","zh","d"],{"children":["blog",{"children":[["slug","cdn-cache-poisoning-cache-key","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","html",null,{"lang":"en","children":["$","body",null,{"style":{"fontFamily":"system-ui, sans-serif","margin":0},"children":["$","div",null,{"style":{"maxWidth":1400,"margin":"0 auto","padding":"0 24px","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","textAlign":"center","minHeight":"100vh","gap":24},"children":[["$","div",null,{"style":{"fontSize":"8rem","fontWeight":700,"color":"#285bd420"},"children":"404"}],["$","h1",null,{"style":{"fontSize":"2rem","fontWeight":600,"color":"#142149","margin":0},"children":"Page Not Found"}],["$","p",null,{"style":{"color":"#6b7280","maxWidth":400},"children":"The page you're looking for doesn't exist or has been moved."}],["$","$L4",null,{"href":"/","style":{"display":"inline-flex","alignItems":"center","justifyContent":"center","padding":"12px 32px","borderRadius":8,"fontWeight":500,"textDecoration":"none","background":"linear-gradient(to right, #285bd4, #4a7aee)","color":"white"},"children":"Back to Home"}]]}]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["locale","zh","d"],["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/753912fc05c0034a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L5"]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","cdn-cache-poisoning-cache-key","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+12:I[1356,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","8414","static/chunks/app/%5Blocale%5D/blog/%5Bslug%5D/page-91d415d5236d6e24.js"],"Image"]
+13:I[5477,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","8414","static/chunks/app/%5Blocale%5D/blog/%5Bslug%5D/page-91d415d5236d6e24.js"],"default"]
+6:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"@id\":\"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/#article\",\"headline\":\"CDN 快取污染是什么？从 Cache Key 与请求处理看防护关键\",\"name\":\"CDN 快取污染是什么？从 Cache Key 与请求处理看防护关键\",\"description\":\"同一个网址，不一定代表相同的内容。解析 CDN 快取污染（Cache Poisoning）如何形成，以及如何透过 Cache Key、快取指示与分阶段验证，确认 CDN 的判断与源站一致。\",\"url\":\"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/\",\"datePublished\":\"2026-11-04\",\"dateModified\":\"2026-11-04\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https://www.byteshield.com/images/blog/cdn-cache-poisoning-cache-key.webp\",\"width\":1600,\"height\":900},\"author\":{\"@type\":\"Organization\",\"@id\":\"https://www.byteshield.com/#organization\"},\"publisher\":{\"@type\":\"Organization\",\"@id\":\"https://www.byteshield.com/#organization\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/\"},\"inLanguage\":\"zh-CN\"}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ByteShield\",\"item\":\"https://www.byteshield.com/zh/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"博客\",\"item\":\"https://www.byteshield.com/zh/blog/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"CDN 快取污染是什么？从 Cache Key 与请求处理看防护关键\",\"item\":\"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/\"}]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/#faq\",\"url\":\"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"什么是 CDN 快取污染？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当 CDN 将原本需要区分的请求视为相同，攻击者便可能利用这类判断落差，让受到操控的回应进入共用快取，后续正常访客也可能取得同一份内容，这就是 CDN 快取污染（Cache Poisoning）。\"}},{\"@type\":\"Question\",\"name\":\"Cache Key 是否越复杂越好？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"不是。将所有 Cookie 与参数纳入，可能产生大量低重用性的快取版本；涉及身分与授权的内容，也不能仅靠增加快取栏位就认定安全。应先依应用路径整理哪些资讯会改变回应，再决定共用与排除规则。\"}},{\"@type\":\"Question\",\"name\":\"看到 HIT 就代表快取设定正确吗？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"不一定。HIT 只能证明快取被使用，仍需要确认回传内容正确。验证时除了本文，也应比较状态码、转址位置、快取控制与平台提供的快取状态资讯，并检查不同账号与未登入访客是否取得各自应有的内容。\"}},{\"@type\":\"Question\",\"name\":\"系统更新后，哪些情况需要重新检查快取设定？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"新增语系或币别、新增会员与个人化功能、API 改版、调整 Proxy、负载均衡或回源架构，以及修改 CDN 快取规则时，都应重新确认快取策略是否仍符合预期。\"}}]}"}}],["$","div",null,{"className":"max-w-[1400px] py-40 px-6 mx-auto","children":["$","main",null,{"className":"flex flex-col gap-32 w-full","children":["$","article",null,{"className":"max-w-3xl mx-auto w-full","children":["$L11",["$","div",null,{"className":"rounded-xl overflow-hidden mb-8","children":["$","$L12",null,{"src":"/images/blog/cdn-cache-poisoning-cache-key.webp","alt":"CDN 快取污染是什么？从 Cache Key 与请求处理看防护关键","width":1200,"height":630,"sizes":"(min-width: 768px) 768px, 100vw","className":"w-full h-auto","priority":true}]}],["$","header",null,{"className":"flex flex-col gap-4 mb-10","children":[["$","h1",null,{"children":"CDN 快取污染是什么？从 Cache Key 与请求处理看防护关键"}],["$","p",null,{"className":"text-gray-400 text-sm inline-flex items-center gap-2","children":["发布于"," ","2026-11-04",[["$","span",null,{"children":"|"}],["$","span",null,{"className":"inline-flex items-center gap-1","children":["作者："," ","ByteShield Team",["$","$L13",null,{"ref":"$undefined","iconNode":[["path",{"d":"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z","key":"3c2336"}],["path",{"d":"m9 12 2 2 4-4","key":"dzmm74"}]],"className":"lucide-badge-check text-teal-500","size":16}]]}]]]}]]}],"$L14","$L15","$L16"]}]}]}]]
+18:I[1525,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","8414","static/chunks/app/%5Blocale%5D/blog/%5Bslug%5D/page-91d415d5236d6e24.js"],"default"]
+17:T2a79,<div class="takeaways">
+<p><strong>重点摘要</strong></p>
+<ul>
+<li>同一个网址，不一定代表相同的内容；若 CDN 将需要区分的请求视为相同，就可能把不适合共用的回应提供给客户。</li>
+<li>CDN 快取污染（Cache Poisoning）是攻击者利用 CDN 与源站的判断落差，让受到操控的回应进入共用快取。</li>
+<li>Cache Key 并非越复杂越好，涉及身分与授权的内容，也不能仅靠增加快取栏位就认定安全。</li>
+<li>源站的 private、no-store、no-cache 快取指示意义不同，三者不能混用，也要确认 CDN 规则是否覆写源站设定。</li>
+<li>看到 HIT 只能证明快取被使用，仍需透过分阶段与跨账号验证，确认回传内容正确。</li>
+</ul>
+</div>
+<p>网站导入 CDN 后，通常会透过快取降低回源流量、缩短载入时间，让不同地区的使用者更快取得内容。然而，当网站同时提供多语系、会员服务与个人化资讯时，快取设定也需要配合应用程式的实际行为调整。</p>
+<p>同一个网址，不一定代表相同的内容。若 CDN 将原本需要区分的请求视为相同，就可能把不适合共用的回应提供给客户。当攻击者进一步利用这类判断落差，让受到操控的回应进入共用快取，就可能形成 <strong>CDN 快取污染（Cache Poisoning）</strong>。</p>
+<p>因此，评估 CDN 快取效果时，除了速度与命中率，也需要确认：<strong>哪些内容可以被共用，以及 CDN 的判断是否与源站一致。</strong></p>
+<h2>为什么同一个网址，可能需要回传不同内容？</h2>
+<p>以跨境电商网站为例，使用者开启相同的商品页面，看到的内容可能因情境而有所不同：</p>
+<ul>
+<li>语系差异：中国与日本使用者选择不同语系，页面文字随之改变。</li>
+<li>币别调整：使用者切换计价币别，商品价格与促销资讯跟着调整。</li>
+<li>个人化资讯：会员登入后，页面出现专属折扣价、账户资讯或购物车状态。</li>
+</ul>
+<p>这些差异可能来自 URL 路径、Query String、Cookie、HTTP Header，或应用程式判断的登入状态。</p>
+<p>从源站的角度来看，这些是需要分别处理的请求；但如果 CDN 只依照部分资讯区分快取，就可能将不同版本合并。</p>
+<p>需要注意的是，显示错误语系或币别，不一定代表遭到攻击；它也可能只是快取策略与业务逻辑没有对齐。<strong>因此，在追求快取效率之前，必须先确认内容的共用范围。</strong></p>
+<h2>CDN 如何决定能否使用同一份快取？</h2>
+<p>CDN 通常透过 <strong>Cache Key（快取键）</strong>，识别请求所对应的快取内容。Cache Key 可以理解为查找快取的索引，实际组成则取决于平台与设定，可能涉及网域、路径、Query String 或指定的请求栏位。</p>
+<p>例如，网站透过以下网址提供不同币别：</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>请求网址</th><th>源站预期回传内容</th></tr>
+</thead>
+<tbody>
+<tr><td>/products/item-a?currency=CNY</td><td>人民币价格</td></tr>
+<tr><td>/products/item-a?currency=JPY</td><td>日圆价格</td></tr>
+</tbody>
+</table>
+</div>
+<p>如果 CDN 忽略 currency，源站却依照这个参数产生不同内容，就可能发生版本混用。</p>
+<p>快取污染则进一步涉及攻击者操控回应。例如，应用程式信任了外部传入的 Header，依其内容产生页面连结；但 CDN 没有区分这个 Header 的差异。当受到操控的页面被快取，后续正常访客也可能取得同一份内容。</p>
+<p>处理方式需要依应用需求决定：移除不必要的输入影响、让快取策略正确区分内容，或让该回应略过共用快取。</p>
+<p><strong>Cache Key 并非越复杂越好。</strong> 将所有 Cookie 与参数纳入，可能产生大量低重用性的快取版本；涉及身分与授权的内容，也不能仅靠增加快取栏位就认定安全。</p>
+<h2>快取设定需要确认哪些资讯？</h2>
+<p>设定之前，建议先依应用路径整理“哪些资讯会改变回应”，再决定共用与排除规则。</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>请求资讯</th><th>需要确认的问题</th><th>预期内容与设定方向</th></tr>
+</thead>
+<tbody>
+<tr><td>路径 Path</td><td>是公开资源、会员页面，还是交易端点？</td><td>商品图片可评估共用；账户与结账内容应明确限制共用快取。</td></tr>
+<tr><td>Query String</td><td>参数是否影响语系、币别、搜寻条件或存取权限？</td><td>保留有意义的内容差异；追踪参数需确认不影响回应后，才评估忽略。</td></tr>
+<tr><td>Cookie</td><td>是否改变会员价格、购物车或个人化资讯？</td><td>公开内容与个人化内容分开处理，避免不同使用者共用敏感回应。</td></tr>
+<tr><td>Header</td><td>是否参与语系选择、转址或内容生成？由谁设定？</td><td>确认必要栏位、可信来源与处理方式，避免直接信任用户端提供的代理资讯。</td></tr>
+<tr><td>预期内容</td><td>相同条件下，哪些部分应一致？哪些必须隔离？</td><td>建立可比较的验收标准，涵盖本文、状态码、回应 Header 与转址位置。</td></tr>
+</tbody>
+</table>
+</div>
+<p>源站的快取指示也需要一并检查。依 HTTP 快取规范，private 限制共用快取储存回应，no-store 要求不储存，而 no-cache 允许储存，但重用前必须验证，三者不能混用。</p>
+<p>部署时还要确认 CDN 规则是否覆写源站设定，并实测 Vary、Cookie 与授权请求的处理结果。不能只因档名看起来像静态资源，就认定内容适合公开共用。</p>
+<h2>如何验证快取设定？</h2>
+<p>验收应同时检查效能与内容正确性。建议在隔离的测试网域或授权环境中，使用测试账号与合成资料，依序比较三个阶段：</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>验证阶段</th><th>检查内容</th></tr>
+</thead>
+<tbody>
+<tr><td>源站回应</td><td>不同语系、币别与账号，是否取得预期内容？</td></tr>
+<tr><td>CDN 首次回应</td><td>在确认没有既有快取后，回源结果是否与预期一致？</td></tr>
+<tr><td>后续快取命中</td><td>另一个工作阶段取得的内容，是否仍符合其请求条件？</td></tr>
+</tbody>
+</table>
+</div>
+<p>每次测试先改变一个条件，才能厘清差异来自哪里。除了本文，也应比较状态码、转址位置、快取控制与平台提供的快取状态资讯。</p>
+<p>跨账号检查尤其重要：账号 A 完成操作后，账号 B 与未登入访客不应取得 A 的个人资讯；公开且允许共用的内容，则应维持正确版本。</p>
+<p>因此，<strong>看到 HIT 只能证明快取被使用，仍需要确认回传内容正确。</strong> 若浏览器与 CDN 结果不同，也要分别排查浏览器快取，避免混淆问题来源。</p>
+<p>如果想进一步了解如何透过速度测试、Response Header 与快取命中率检查 CDN 的实际表现，也可以参考<a href="/zh/blog/is-your-cdn-actually-working/">〈CDN 真的有在工作吗？从速度测试到快取命中率的排查流程〉</a>。</p>
+<p>若确认发生污染，应先限制受影响的快取行为、保留必要纪录，修正根因后再清除相关快取并复测，避免错误内容再次被写入。</p>
+<h2>系统更新后，哪些设定需要重新检查？</h2>
+<p>快取策略需要随应用演进。以下变更都应纳入检查：</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>系统变更</th><th>重新确认的重点</th></tr>
+</thead>
+<tbody>
+<tr><td>新增语系或币别</td><td>选择依据是否改变？不同版本是否仍能正确区分？</td></tr>
+<tr><td>新增会员与个人化功能</td><td>原本公开的回应是否开始带入使用者资料？</td></tr>
+<tr><td>API 改版</td><td>同一路径是否因 Token、参数或权限回传不同内容？</td></tr>
+<tr><td>调整 Proxy、负载均衡或回源架构</td><td>Header 信任来源、Host 与 URL 解析是否一致？</td></tr>
+<tr><td>修改 CDN 快取规则</td><td>规则优先顺序、排除范围与源站指示是否仍符合预期？</td></tr>
+</tbody>
+</table>
+</div>
+<p>尤其当边缘节点、代理与源站对编码、重复参数或路径正规化的解读不同时，原本的设定假设可能失效。应用与网路团队需要用同一组测试案例确认结果。</p>
+<h2>ByteShield 如何协助评估 CDN 快取策略？</h2>
+<p>企业评估快取策略时，可以先提供主要业务路径、预期内容差异，以及登入与个人化需求，让技术团队更容易掌握应用行为。</p>
+<p>ByteShield 已提供快取策略优化、Response Header 检查、回源异常排查与效能分析等技术支援，可作为评估快取设定的基础。</p>
+<p>实际评估时，可依序整理需求、确认平台支援的设定范围，再由双方共同定义验收案例，将内容正确性、账号隔离与效能表现一起纳入检查。</p>
+<h2>常见问题</h2>
+<h3>什么是 CDN 快取污染？</h3>
+<p>当 CDN 将原本需要区分的请求视为相同，攻击者便可能利用这类判断落差，让受到操控的回应进入共用快取，后续正常访客也可能取得同一份内容，这就是 CDN 快取污染（Cache Poisoning）。</p>
+<h3>Cache Key 是否越复杂越好？</h3>
+<p>不是。将所有 Cookie 与参数纳入，可能产生大量低重用性的快取版本；涉及身分与授权的内容，也不能仅靠增加快取栏位就认定安全。应先依应用路径整理哪些资讯会改变回应，再决定共用与排除规则。</p>
+<h3>看到 HIT 就代表快取设定正确吗？</h3>
+<p>不一定。HIT 只能证明快取被使用，仍需要确认回传内容正确。验证时除了本文，也应比较状态码、转址位置、快取控制与平台提供的快取状态资讯，并检查不同账号与未登入访客是否取得各自应有的内容。</p>
+<h3>系统更新后，哪些情况需要重新检查快取设定？</h3>
+<p>新增语系或币别、新增会员与个人化功能、API 改版、调整 Proxy、负载均衡或回源架构，以及修改 CDN 快取规则时，都应重新确认快取策略是否仍符合预期。</p>
+<p>如果您的网站涉及多语系、会员服务、个人化页面或高流量 API，欢迎了解 ByteShield <a href="/zh/services/scdn/">SCDN 服务</a>，或<a href="/zh/contact/" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_us_click', location: 'blog'});">联系 ByteShield</a>，根据现有应用架构与交付需求，评估合适的 CDN 快取与安全策略。</p>14:["$","div",null,{"className":"prose","dangerouslySetInnerHTML":{"__html":"$17"}}]
+15:["$","aside",null,{"className":"mt-12 rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col md:flex-row md:items-center gap-4","children":[["$","div",null,{"className":"flex-1","children":[["$","p",null,{"className":"text-sm text-gray-400 mb-1","children":"相关服务"}],["$","h4",null,{"className":"mb-1","children":"全球安全加速"}],["$","p",null,{"className":"text-gray-600 text-sm mb-0","children":"1000+ 全球边缘节点，企业级 DNS 优化，静态与动态内容极速分发。为网站提供安全加速与智能路由，覆盖六大洲。"}]]}],["$","$L18",null,{"href":"/services/scdn","variant":"outline","locale":"zh","children":"了解更多"}]]}]
+16:["$","section",null,{"className":"mt-16","children":[["$","h3",null,{"className":"mb-6","children":"延伸阅读"}],["$","div",null,{"className":"grid gap-6 sm:grid-cols-3","children":["$L19","$L1a","$L1b"]}]]}]
+1c:I[8724,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","8450","static/chunks/app/%5Blocale%5D/layout-2a35bba5df0f1198.js"],"default"]
+5:["$","html",null,{"lang":"zh-CN","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){if(typeof location==='undefined'||location.host!=='byteshield2013.github.io')return;var p=location.pathname;if(!p.endsWith('/')&&!/\\.[a-z0-9]+$/i.test(p))p+='/';location.replace('https://www.byteshield.com'+p+location.search+location.hash)})()"}}]}],["$","body",null,{"className":"__variable_d8ebd1 font-zh","children":[["$","$L1c",null,{"message":"我们使用 Cookie 来改善您的体验并分析网站流量。点击「接受」即表示您同意我们使用 Cookie。","acceptLabel":"接受"}],"$L1d"]}]]}]
+1e:I[7088,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","8414","static/chunks/app/%5Blocale%5D/blog/%5Bslug%5D/page-91d415d5236d6e24.js"],"default"]
+11:["$","$L1e",null,{"ref":"$undefined","href":"/zh/blog/","locale":"zh","localeCookie":{"name":"NEXT_LOCALE","sameSite":"lax"},"className":"inline-flex items-center gap-1 text-sm text-gray-400 hover:text-brand transition-colors mb-8 no-underline hover:opacity-100","children":[["$","$L13",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left","size":14}],"返回博客"]}]
+19:["$","$L1e","multi-cdn-dns-traffic-steering",{"ref":"$undefined","href":"/zh/blog/multi-cdn-dns-traffic-steering/","locale":"zh","localeCookie":"$11:props:localeCookie","className":"group block rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 no-underline hover:opacity-100","children":[["$","div",null,{"className":"relative aspect-video bg-gray-100 overflow-hidden","children":["$","$L12",null,{"src":"/images/blog/multi-cdn-dns-traffic-steering.webp","alt":"Multi-CDN 如何实现智能流量调度？从 DNS 解析到跨 CDN 分流与备援","fill":true,"sizes":"(min-width: 640px) 33vw, 100vw","className":"object-cover group-hover:scale-105 transition-transform duration-300"}]}],["$","div",null,{"className":"p-4 flex flex-col gap-1.5","children":[["$","h4",null,{"className":"mb-0 group-hover:text-brand transition-colors line-clamp-2","children":"Multi-CDN 如何实现智能流量调度？从 DNS 解析到跨 CDN 分流与备援"}],["$","p",null,{"className":"text-gray-400 text-xs","children":"2026-10-14"}]]}]]}]
+1a:["$","$L1e","cdn-as-load-balancer",{"ref":"$undefined","href":"/zh/blog/cdn-as-load-balancer/","locale":"zh","localeCookie":"$11:props:localeCookie","className":"group block rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 no-underline hover:opacity-100","children":[["$","div",null,{"className":"relative aspect-video bg-gray-100 overflow-hidden","children":["$","$L12",null,{"src":"/images/blog/cdn-as-load-balancer.webp","alt":"把 CDN 当作最前线的负载均衡：现代架构的流量调度新解法","fill":true,"sizes":"(min-width: 640px) 33vw, 100vw","className":"object-cover group-hover:scale-105 transition-transform duration-300"}]}],["$","div",null,{"className":"p-4 flex flex-col gap-1.5","children":[["$","h4",null,{"className":"mb-0 group-hover:text-brand transition-colors line-clamp-2","children":"把 CDN 当作最前线的负载均衡：现代架构的流量调度新解法"}],["$","p",null,{"className":"text-gray-400 text-xs","children":"2026-06-14"}]]}]]}]
+1b:["$","$L1e","is-your-cdn-actually-working",{"ref":"$undefined","href":"/zh/blog/is-your-cdn-actually-working/","locale":"zh","localeCookie":"$11:props:localeCookie","className":"group block rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 no-underline hover:opacity-100","children":[["$","div",null,{"className":"relative aspect-video bg-gray-100 overflow-hidden","children":["$","$L12",null,{"src":"/images/blog/cdn-working.webp","alt":"CDN 真的有在工作吗？从速度测试到快取命中率的排查流程","fill":true,"sizes":"(min-width: 640px) 33vw, 100vw","className":"object-cover group-hover:scale-105 transition-transform duration-300"}]}],["$","div",null,{"className":"p-4 flex flex-col gap-1.5","children":[["$","h4",null,{"className":"mb-0 group-hover:text-brand transition-colors line-clamp-2","children":"CDN 真的有在工作吗？从速度测试到快取命中率的排查流程"}],["$","p",null,{"className":"text-gray-400 text-xs","children":"2026-05-01"}]]}]]}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+1f:I[3809,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","8450","static/chunks/app/%5Blocale%5D/layout-2a35bba5df0f1198.js"],"default"]
+1d:["$","$L1f",null,{"formats":"$undefined","locale":"zh","messages":{"common":{"contactUs":"立即咨询","learnMore":"了解更多","login":"登录","services":"服务项目","solutions":"解决方案","pricing":"报价咨询","faq":"常见问题","aboutUs":"关于我们"},"components":{"navbar":{"services":"服务项目","solutions":"解决方案","pricing":"报价咨询","faq":"常见问题","blog":"博客","login":"登录","scdn":"全球安全加速","security":"全球安全防护","streaming":"全球流媒体加速","sdk":"SDK 安全加速","chinaCross":"中国跨境加速","igaming":"iGaming 在线游戏","onlineMedia":"在线流媒体娱乐服务","ecommerce":"电子商务应用","ai":"AI 图像生成"},"footer":{"services":"服务项目","solutions":"解决方案","aboutByteshield":"关于 ByteShield","scdn":"全球安全加速","security":"全球安全防护","streaming":"全球流媒体加速","sdk":"SDK 安全加速","chinaCross":"中国跨境加速","igaming":"iGaming 在线游戏","onlineMedia":"在线流媒体娱乐服务","ecommerce":"电子商务应用","ai":"AI 图像生成","about":"关于我们","servicesLink":"服务项目","faqLink":"常见问题","blog":"博客","copyright":"© 2026 ByteShield. All rights reserved."},"cta":{"default":{"title":"快，还要更安全","description":"欢迎您透过 Telegram 联络我们，技术专员将即时为您服务","button":"立即咨询"}}},"pricing":{"table":{"popular":"热门","cta":"立即咨询","featureCol":"功能项目","customized":"专家定制","lite":{"name":"极速版","price":"$$480","unit":"起/月","desc":"适合低流量网站及基础防护需求"},"pro":{"name":"高级版","price":"$$880","unit":"起/月","desc":"方案适合个人、中小型企业门户"},"business":{"name":"商业版","price":"$$1,680","unit":"起/月","desc":"适合中大型企业门户及业务系统"},"enterprise":{"name":"旗舰版","price":"专家定制","desc":"适合大规模化企业门户及业务系统"},"basic":{"title":"基础配置","domains":"域名数量","domainsLite":"5 个","domainsPro":"10 个","domainsBusiness":"20 个","ports":"非标准端口","portsBusiness":"支援（可达 20 种）","origin":"源站保护","ssl":"免费 SSL 凭证","qps":"正常业务 QPS","qpsLite":"4,000","qpsBusiness":"14,000"},"cdn":{"title":"CDN 加速","nodeType":"节点类型","nodeShared":"共享 IP","nodeExclusive":"独享 IP","preCache":"预热缓存","globalAccel":"海外/国内线路加速","cn2Accel":"CN2 国内精品线路加速","bandwidth":"赠送免费带宽","bwLite":"海外：1Mbps/月\n国内：1Mbps/月\n（线路择一）","bwPro":"海外：10Mbps/月\n国内：10Mbps/月\n（线路择一）","bwBusiness":"海外：20Mbps/月\n国内：20Mbps/月\nCN2：5Mbps/月\n（线路择一）"},"waf":{"title":"Web 应用防火墙","cc":"CC 防护","ccDefault":"系统默认","ccCustom":"自订策略","ddos":"抗 D 防护","firewall":"自定义防火墙规则","firewallBasic":"基础","webshell":"Webshell 防御","wafPage":"WAF 拦截页自订","hotlink":"防盗链 / 区域封锁","visitorAuth":"访客鉴权","botManagement":"Bot 行为管理","accessRules":"精准存取规则","accessRulesPro":"20 条","accessRulesBusiness":"100 条"},"tcp":{"title":"TCP 应用","l4":"TCP 四层转发","l4Activate":"需额外开启","loadBalance":"负载平衡","smartOrigin":"智能回源"},"ops":{"title":"运营支援","analytics":"营运分析","logs":"日志下载","support":"技术支持","support5x8":"5×8","support24x7":"24×7","supportDedicated":"24×7 专属"}}},"contact":{"metaTitle":"联系我们","metaDescription":"通过 Telegram 联系 ByteShield 24/7 技术团队，专业工程师为您定制 CDN 加速与安全防护方案。","hero":{"title":"速度、安全，一次拉满","descriptionPrefix":"想让你的网站","descriptionBold":"更快、更安全、带来更多客户","descriptionSuffix":"联系我们的技术与安全专家，了解我们如何为你的业务提供支持。"},"features":{"acceleration":{"title":"全球安全加速","description":"借助全球 1000+ 安全边缘节点，静态/动态资源极速响应，跨境访问同样顺畅，让用户打开网站不再等待。"},"security":{"title":"全球安全防护","description":"Anti-DDoS + WAF + SDK 全层级防护，结合实时规则与威胁情报，抵御恶意攻击，保障业务稳定在线。"},"streaming":{"title":"全球流媒体加速","description":"面向直播/点播场景，支持防盗链与禁播控制，确保视频传输流畅、稳定、安全，提升观看体验与留存。"}},"cta":{"title":"现在开始咨询","description":"欢迎您透过 Telegram 联络我们，ByteShield 技术专员将即时为您服务。","console":"控制台登录"},"form":{"openCta":"预约免费评估","heading":"预约您的免费评估","subheading":"简单描述您的需求，我们的团队会尽快与您联系。","name":"称呼","namePlaceholder":"您的称呼","email":"邮箱","emailPlaceholder":"you@company.com","company":"公司（选填）","companyPlaceholder":"您的公司","service":"需要什么协助？","serviceOptions":{"general":"一般咨询","acceleration":"全球安全加速","security":"全球安全防护","streaming":"全球流媒体加速"},"message":"留言内容","messagePlaceholder":"请简述您的需求、流量规模或目标地区。","submit":"发送留言","submitting":"发送中...","successTitle":"已收到，谢谢您！","successBody":"我们的团队会尽快与您联系。","errorBody":"发送失败，请重试，或透过 Telegram 联系我们。","privacy":"提交即表示您同意我们就此咨询与您联系。"},"tg":{"prompt":"想立即联系？","button":"透过 Telegram 联系我们"}}},"now":"$undefined","timeZone":"Asia/Taipei","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"ByteShield\",\"alternateName\":\"ByteShield | 亚洲顶尖云端服务品牌\",\"description\":\"ByteShield 提供全球 CDN 加速、DDoS 安全防护及流媒体加速服务，专注亚太市场，助力企业实现快速、安全、稳定的数字化体验。\",\"url\":\"https://www.byteshield.com/zh/\",\"inLanguage\":\"zh-CN\",\"publisher\":{\"@id\":\"https://www.byteshield.com/#organization\"}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.byteshield.com/#organization\",\"name\":\"ByteShield\",\"description\":\"ByteShield 提供全球 CDN 加速、DDoS 安全防护及流媒体加速服务，专注亚太市场，助力企业实现快速、安全、稳定的数字化体验。\",\"url\":\"https://www.byteshield.com\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.byteshield.com/images/byteshieldLogo.svg\"},\"sameAs\":[\"https://www.facebook.com/people/ByteShield/61551805930037/\",\"https://www.linkedin.com/company/byteshieldapac\"],\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"url\":\"https://www.byteshield.com/zh/contact/\",\"availableLanguage\":[\"Chinese\",\"English\",\"Japanese\"]}}"}}],"$L20","$L21","$L22","$L23","$L24","$L25"]}]
+26:I[8191,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","8450","static/chunks/app/%5Blocale%5D/layout-2a35bba5df0f1198.js"],"default"]
+27:I[5014,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","465","static/chunks/app/%5Blocale%5D/page-530ec995035b46aa.js"],"Navbar"]
+29:I[5014,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","465","static/chunks/app/%5Blocale%5D/page-530ec995035b46aa.js"],"CTARow"]
+2a:I[5014,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","465","static/chunks/app/%5Blocale%5D/page-530ec995035b46aa.js"],"Footer"]
+2b:I[8754,["2619","static/chunks/2619-3c9e02e22d10480a.js","4707","static/chunks/4707-5805121f20d4ceca.js","1356","static/chunks/1356-31c8deaae82769f8.js","4365","static/chunks/4365-44e24411b8f5c388.js","5014","static/chunks/5014-5f28c6b5bdae315b.js","8450","static/chunks/app/%5Blocale%5D/layout-2a35bba5df0f1198.js"],"default"]
+20:["$","$L26",null,{}]
+21:["$","$L27",null,{}]
+22:["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"max-w-[1400px] mx-auto px-6 flex flex-col items-center justify-center text-center min-h-[70vh] gap-6","children":[["$","div",null,{"className":"text-8xl font-bold text-brand/20","children":"404"}],["$","h1",null,{"className":"text-3xl font-semibold text-main","children":"Page Not Found"}],["$","p",null,{"className":"text-gray-500 max-w-md","children":"The page you're looking for doesn't exist or has been moved."}],"$L28"]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]
+23:["$","$L29",null,{}]
+24:["$","$L2a",null,{}]
+25:["$","$L2b",null,{}]
+28:["$","$L1e",null,{"ref":"$undefined","href":"/zh","locale":"$undefined","localeCookie":"$11:props:localeCookie","className":"inline-flex items-center justify-center px-8 py-3 rounded-lg font-medium transition-all duration-300 no-underline bg-gradient-to-r from-brand to-[#4a7aee] text-white hover:from-[#2250b8] hover:to-brand","children":"Back to Home"}]
+2c:I[622,[],"IconMark"]
+a:{"metadata":[["$","title","0",{"children":"CDN 快取污染是什么？Cache Key 防护关键 | ByteShield"}],["$","meta","1",{"name":"description","content":"同一个网址，不一定代表相同的内容。解析 CDN 快取污染（Cache Poisoning）如何形成，以及如何透过 Cache Key、快取指示与分阶段验证，确认 CDN 的判断与源站一致。"}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/"}],["$","link","5",{"rel":"alternate","hrefLang":"zh-CN","href":"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/"}],["$","link","6",{"rel":"alternate","hrefLang":"en","href":"https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/"}],["$","link","7",{"rel":"alternate","hrefLang":"ja","href":"https://www.byteshield.com/ja/blog/cdn-cache-poisoning-cache-key/"}],["$","link","8",{"rel":"alternate","hrefLang":"x-default","href":"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/"}],["$","meta","9",{"name":"google-site-verification","content":"cEFsHTnDyux79O4wQw-akDwPCO35jfdUowkd_f0kPAA"}],["$","meta","10",{"property":"og:title","content":"CDN 快取污染是什么？Cache Key 防护关键"}],["$","meta","11",{"property":"og:description","content":"同一个网址，不一定代表相同的内容。解析 CDN 快取污染（Cache Poisoning）如何形成，以及如何透过 Cache Key、快取指示与分阶段验证，确认 CDN 的判断与源站一致。"}],["$","meta","12",{"property":"og:url","content":"https://www.byteshield.com/zh/blog/cdn-cache-poisoning-cache-key/"}],["$","meta","13",{"property":"og:site_name","content":"ByteShield"}],["$","meta","14",{"property":"og:locale","content":"zh_CN"}],["$","meta","15",{"property":"og:image","content":"https://www.byteshield.com/images/blog/cdn-cache-poisoning-cache-key.png"}],["$","meta","16",{"property":"og:image:alt","content":"CDN 快取污染是什么？Cache Key 防护关键"}],["$","meta","17",{"property":"og:locale:alternate","content":"en_US"}],["$","meta","18",{"property":"og:locale:alternate","content":"ja_JP"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2026-11-04"}],["$","meta","21",{"property":"article:modified_time","content":"2026-11-04"}],["$","meta","22",{"property":"article:author","content":"ByteShield Team"}],["$","meta","23",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","24",{"name":"twitter:title","content":"CDN 快取污染是什么？Cache Key 防护关键"}],["$","meta","25",{"name":"twitter:description","content":"同一个网址，不一定代表相同的内容。解析 CDN 快取污染（Cache Poisoning）如何形成，以及如何透过 Cache Key、快取指示与分阶段验证，确认 CDN 的判断与源站一致。"}],["$","meta","26",{"name":"twitter:image","content":"https://www.byteshield.com/images/blog/cdn-cache-poisoning-cache-key.png"}],["$","link","27",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","28",{"rel":"apple-touch-icon","href":"/apple-icon.png?dd6b993e0407fee5","type":"image/png","sizes":"192x192"}],["$","$L2c","29",{}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

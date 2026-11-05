@@ -1,3 +1,164 @@
+# What Is CDN Cache Poisoning? Cache Keys, Request Handling, and the Keys to Prevention
+URL: https://www.byteshield.com/en/blog/cdn-cache-poisoning-cache-key/
+
+<div class="takeaways">
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li>The same URL does not always mean the same content. If a CDN treats requests that should be distinguished as identical, it can serve customers responses that were never meant to be shared.</li>
+<li>CDN cache poisoning happens when an attacker exploits a mismatch between how the CDN and the origin see a request, getting a manipulated response into the shared cache.</li>
+<li>A more complex Cache Key is not automatically better, and content involving identity or authorization is not made safe just by adding more cache fields.</li>
+<li>The origin directives private, no-store, and no-cache mean different things and must not be confused. Also confirm whether CDN rules override the origin's settings.</li>
+<li>A HIT only proves the cache was used. Staged and cross-account testing is still needed to confirm the content returned is correct.</li>
+</ul>
+</div>
+
+Once a website is behind a CDN, caching usually cuts origin traffic and load times, so users in different regions get content faster. But when a site also offers multiple languages, member services, and personalized information, cache settings need to be tuned to how the application actually behaves.
+
+The same URL does not always mean the same content. If a CDN treats requests that should be kept apart as identical, it may serve customers responses that should never have been shared. And when an attacker goes a step further and exploits that gap to get a manipulated response into the shared cache, the result can be **CDN cache poisoning**.
+
+So when you evaluate how well your CDN caches, look beyond speed and hit ratio. You also need to confirm **which content can be shared, and whether the CDN's decisions match the origin's.**
+
+## Why might the same URL need to return different content?
+
+Take a cross-border e-commerce site. Users opening the same product page may see different content depending on their situation:
+
+- Language: users in China and Japan choose different languages, and the page text changes accordingly.
+- Currency: users switch the pricing currency, and product prices and promotions change with it.
+- Personalization: after a member logs in, the page shows exclusive discounted prices, account information, or cart status.
+
+These differences can come from the URL path, query string, cookies, HTTP headers, or the login state the application determines.
+
+From the origin's point of view, these are requests that need to be handled separately. But if the CDN only uses part of that information to tell cached content apart, it may merge different versions into one.
+
+Note that showing the wrong language or currency does not necessarily mean you are under attack. It may simply mean your caching strategy and business logic are out of step. **That is why you need to define what content can be shared before chasing cache efficiency.**
+
+## How does a CDN decide whether to reuse the same cached copy?
+
+A CDN usually relies on a **Cache Key** to identify which cached content a request maps to. Think of the Cache Key as the index used to look up the cache. What goes into it depends on the platform and its configuration, and may include the domain, path, query string, or specified request fields.
+
+For example, say a site serves different currencies through these URLs:
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Request URL</th><th>Content the origin is expected to return</th></tr>
+</thead>
+<tbody>
+<tr><td>/products/item-a?currency=CNY</td><td>Price in Chinese yuan</td></tr>
+<tr><td>/products/item-a?currency=JPY</td><td>Price in Japanese yen</td></tr>
+</tbody>
+</table>
+</div>
+
+If the CDN ignores currency while the origin generates different content based on it, versions can get mixed up.
+
+Cache poisoning goes a step further: an attacker manipulates the response. For example, the application trusts a header passed in from outside and uses it to build links on the page, but the CDN does not distinguish between different values of that header. Once the manipulated page is cached, legitimate visitors who come afterwards may receive that same content.
+
+How to fix it depends on what the application needs: remove the influence of unnecessary inputs, make the caching strategy distinguish content correctly, or let that response bypass the shared cache.
+
+**A more complex Cache Key is not automatically better.** Including every cookie and parameter can produce a large number of cached variants that are rarely reused. And content involving identity or authorization cannot be considered safe just because more cache fields were added.
+
+## What should you check when configuring the cache?
+
+Before configuring anything, it helps to go through the application path by path and map out "which inputs change the response," then decide your sharing and exclusion rules.
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Request input</th><th>Questions to answer</th><th>Expected content and configuration direction</th></tr>
+</thead>
+<tbody>
+<tr><td>Path</td><td>Is it a public resource, a member page, or a transaction endpoint?</td><td>Product images can be considered for sharing; account and checkout content should be explicitly kept out of the shared cache.</td></tr>
+<tr><td>Query String</td><td>Do the parameters affect language, currency, search criteria, or access rights?</td><td>Keep meaningful content differences. Only consider ignoring tracking parameters after confirming they do not affect the response.</td></tr>
+<tr><td>Cookie</td><td>Do they change member prices, the cart, or personalized information?</td><td>Handle public and personalized content separately so that different users never share sensitive responses.</td></tr>
+<tr><td>Header</td><td>Is it involved in language selection, redirects, or content generation? Who sets it?</td><td>Confirm which fields are necessary, which sources are trusted, and how they are handled. Do not blindly trust proxy information supplied by the client.</td></tr>
+<tr><td>Expected content</td><td>Under the same conditions, which parts should be identical, and which must be isolated?</td><td>Set comparable acceptance criteria covering the response body, status code, response headers, and redirect location.</td></tr>
+</tbody>
+</table>
+</div>
+
+Check the origin's caching directives as well. Under the HTTP caching specification, private stops shared caches from storing the response, no-store requires that it not be stored at all, and no-cache allows storage but requires validation before reuse. These three must not be confused.
+
+When deploying, also confirm whether CDN rules override the origin's settings, and test how Vary, cookies, and authorized requests are actually handled. Never assume content is fit for public sharing just because its filename looks like a static asset.
+
+## How do you verify your cache configuration?
+
+Acceptance testing should check both performance and content correctness. Ideally, use an isolated test domain or an authorized environment, with test accounts and synthetic data, and compare three stages in order:
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Stage</th><th>What to check</th></tr>
+</thead>
+<tbody>
+<tr><td>Origin response</td><td>Does each language, currency, and account get the expected content?</td></tr>
+<tr><td>First CDN response</td><td>After confirming nothing is already cached, does the origin fetch return what you expect?</td></tr>
+<tr><td>Subsequent cache hits</td><td>Does the content served to another session still match that session's request conditions?</td></tr>
+</tbody>
+</table>
+</div>
+
+Change only one condition per test so you can pin down where a difference comes from. Besides the response body, compare status codes, redirect locations, cache-control settings, and the cache status information your platform provides.
+
+Cross-account checks are especially important. After account A completes an action, account B and logged-out visitors must not receive A's personal information, while public content that is allowed to be shared should keep serving the correct version.
+
+In short, **a HIT only proves the cache was used; you still need to confirm the content returned is correct.** If the browser and the CDN give different results, troubleshoot the browser cache separately so you do not confuse where the problem lies.
+
+For more on checking how your CDN actually performs through speed tests, response headers, and cache hit ratio, see <a href="/blog/is-your-cdn-actually-working">"Is Your CDN Actually Working? A Troubleshooting Guide From Speed Tests to Cache Hit Ratio"</a>.
+
+If you confirm that poisoning has occurred, first restrict the affected caching behavior and keep the necessary records. Fix the root cause, then purge the related cache and test again, so the bad content is not written back in.
+
+## Which settings need another look after a system update?
+
+Your caching strategy has to evolve with the application. All of the following changes should trigger a review:
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>System change</th><th>What to re-confirm</th></tr>
+</thead>
+<tbody>
+<tr><td>Adding a language or currency</td><td>Has the basis for selecting it changed? Can the different versions still be told apart correctly?</td></tr>
+<tr><td>Adding membership and personalization features</td><td>Have responses that used to be public started including user data?</td></tr>
+<tr><td>New API version</td><td>Does the same path return different content depending on the token, parameters, or permissions?</td></tr>
+<tr><td>Changes to proxies, load balancing, or origin architecture</td><td>Are header trust sources, Host, and URL parsing still consistent?</td></tr>
+<tr><td>Changes to CDN cache rules</td><td>Do rule priority, exclusion scope, and origin directives still behave as expected?</td></tr>
+</tbody>
+</table>
+</div>
+
+In particular, when edge nodes, proxies, and the origin interpret encoding, duplicate parameters, or path normalization differently, the assumptions behind your original configuration may no longer hold. Application and network teams should confirm results using the same set of test cases.
+
+## How can ByteShield help you evaluate your CDN caching strategy?
+
+When evaluating a caching strategy, a business can start by sharing its main business paths, expected content differences, and login and personalization requirements, which makes it easier for the technical team to understand how the application behaves.
+
+ByteShield already provides technical support including caching strategy optimization, response header checks, origin fetch troubleshooting, and performance analysis, which can serve as the foundation for evaluating your cache configuration.
+
+In practice, the evaluation works step by step: gather the requirements, confirm which settings the platform supports, then have both sides define the acceptance test cases together, so content correctness, account isolation, and performance are all checked at once.
+
+## FAQ
+
+### What is CDN cache poisoning?
+
+When a CDN treats requests that should be kept apart as the same request, an attacker can exploit that gap to get a manipulated response into the shared cache. Legitimate visitors who come afterwards may then receive that same content. This is CDN cache poisoning.
+
+### Is a more complex Cache Key always better?
+
+No. Including every cookie and parameter can create a large number of cached variants that are rarely reused, and content involving identity or authorization cannot be considered safe just because more fields were added to the cache key. Start by mapping, path by path, which inputs change the response, then decide what can be shared and what should be excluded.
+
+### Does a HIT mean my cache configuration is correct?
+
+Not necessarily. A HIT only proves the cache was used; you still need to confirm the content returned is correct. Beyond the response body, compare status codes, redirect locations, cache-control settings, and the cache status information your platform provides, and check that different accounts and logged-out visitors each receive the content meant for them.
+
+### Which system changes call for a fresh review of cache settings?
+
+Adding a language or currency, adding membership or personalization features, a new API version, changes to proxies, load balancing, or origin architecture, and changes to CDN cache rules should all trigger a check that your caching strategy still behaves as expected.
+
+If your website involves multiple languages, member services, personalized pages, or high-traffic APIs, explore ByteShield's <a href="/services/scdn">SCDN service</a>, or <a href="/contact" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_us_click', location: 'blog'});">contact ByteShield</a> to assess the right CDN caching and security strategy for your current application architecture and delivery needs.
+
+---
+
 # Can't Patch a PHP Vulnerability Right Away? Use a WAF to Reduce Risk and Buy Time for Server Updates
 URL: https://www.byteshield.com/en/blog/php-vulnerability-virtual-patching-waf/
 
